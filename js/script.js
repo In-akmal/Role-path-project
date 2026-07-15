@@ -15,6 +15,7 @@ const RP = (() => {
      1. ROADMAP CATALOGUE (dummy data — would come from GET /api/roadmaps)
      ------------------------------------------------------------------ */
   const ROADMAPS = [
+<<<<<<< HEAD
     { id: "java-basics", name: "Java Basics", category: "Software Development", desc: "Core syntax, OOP fundamentals and problem solving in Java.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.8, students: 4200, tags: ["Java", "OOP", "Data Types", "Control Flow"], demand: "High" },
     { id: "python-basics", name: "Python Basics", category: "Software Development", desc: "Variables, control flow, functions and your first scripts.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.9, students: 5000, tags: ["Python", "Scripting", "Functions", "Syntax"], demand: "Very High" },
     { id: "html-basics", name: "HTML Basics", category: "Software Development", desc: "Structure the web with semantic, accessible markup.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout", rating: 4.7, students: 3800, tags: ["HTML5", "Web", "Markup", "Semantic"], demand: "High" },
@@ -35,6 +36,28 @@ const RP = (() => {
     { id: "automobile-engineer", name: "Automobile Engineer", category: "Automobile Engineering", desc: "Vehicle systems, powertrains and automotive design.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear", rating: 4.5, students: 950, tags: ["Automotive", "Powertrains", "Design", "EV", "Dynamics"], demand: "Growing" },
     { id: "electronics-engineer", name: "Electronics Engineer", category: "Electronics Engineering", desc: "Circuit design, embedded systems and signal processing.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "chip", rating: 4.6, students: 1200, tags: ["Circuits", "Embedded C", "Microcontrollers", "Signals", "IoT"], demand: "High" },
     { id: "electrical-engineer", name: "Electrical Engineer", category: "Electrical Engineering", desc: "Power systems, machines and control fundamentals.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "bolt", rating: 4.5, students: 1400, tags: ["Power Systems", "Machines", "Control Systems", "High Voltage", "Renewables"], demand: "High" }
+=======
+    { id: "java-basics", name: "Java Basics", category: "Software Development", desc: "Core syntax, OOP fundamentals and problem solving in Java.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code" },
+    { id: "python-basics", name: "Python Basics", category: "Software Development", desc: "Variables, control flow, functions and your first scripts.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code" },
+    { id: "html-basics", name: "HTML Basics", category: "Software Development", desc: "Structure the web with semantic, accessible markup.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout" },
+    { id: "css-basics", name: "CSS Basics", category: "Software Development", desc: "Layout, responsive design and styling fundamentals.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout" },
+    { id: "c-basics", name: "C Programming Basics", category: "Software Development", desc: "Memory, pointers and the fundamentals every engineer needs.", duration: "5 Weeks", difficulty: "Beginner", price: 0, icon: "cpu" },
+
+    { id: "java-fullstack", name: "Java Full Stack Developer", category: "Software Development", desc: "Spring Boot, REST APIs, React and databases end to end.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code" },
+    { id: "python-fullstack", name: "Python Full Stack Developer", category: "Software Development", desc: "Django, REST APIs and modern frontend integration.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code" },
+    { id: "frontend-dev", name: "Frontend Developer", category: "Software Development", desc: "HTML, CSS, JavaScript and modern UI frameworks.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "layout" },
+    { id: "backend-dev", name: "Backend Developer", category: "Software Development", desc: "APIs, databases, authentication and system design.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "server" },
+    { id: "ai-engineer", name: "AI Engineer", category: "Artificial Intelligence", desc: "Machine learning, neural networks and deployment pipelines.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "cpu" },
+    { id: "data-scientist", name: "Data Scientist", category: "Data Science", desc: "Statistics, Python, visualization and predictive modelling.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "chart" },
+    { id: "cloud-engineer", name: "Cloud Engineer", category: "Cloud Computing", desc: "AWS, Azure fundamentals, deployment and scaling.", duration: "10 Months", difficulty: "Intermediate", price: 29, icon: "cloud" },
+    { id: "devops-engineer", name: "DevOps Engineer", category: "Cloud Computing", desc: "CI/CD, containers, orchestration and infrastructure as code.", duration: "10 Months", difficulty: "Advanced", price: 29, icon: "cloud" },
+    { id: "cyber-security", name: "Cyber Security", category: "Cyber Security", desc: "Network security, ethical hacking and threat defence.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "shield" },
+    { id: "civil-engineer", name: "Civil Engineer", category: "Civil Engineering", desc: "Structural design, surveying and construction management.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "building" },
+    { id: "mechanical-engineer", name: "Mechanical Engineer", category: "Mechanical Engineering", desc: "Thermodynamics, CAD design and manufacturing systems.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear" },
+    { id: "automobile-engineer", name: "Automobile Engineer", category: "Automobile Engineering", desc: "Vehicle systems, powertrains and automotive design.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear" },
+    { id: "electronics-engineer", name: "Electronics Engineer", category: "Electronics Engineering", desc: "Circuit design, embedded systems and signal processing.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "chip" },
+    { id: "electrical-engineer", name: "Electrical Engineer", category: "Electrical Engineering", desc: "Power systems, machines and control fundamentals.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "bolt" },
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   ];
 
   // Topic checklists for the roadmap-details page (dummy — GET /api/roadmaps/{id}/topics)
@@ -49,6 +72,7 @@ const RP = (() => {
       "Advanced concepts",
       "Portfolio capstone project",
     ],
+<<<<<<< HEAD
     "java-basics": ["Intro to Java & JVM", "Variables & Data Types", "Operators & Expressions", "Control Flow Statements", "Loops & Iterations", "Arrays & Strings", "Methods & Functions", "Introduction to OOP", "Classes & Objects", "Constructors", "Basic Inheritance", "Final Mini-Project"],
     "python-basics": ["Introduction to Python", "Variables & Types", "Basic Operators", "String Manipulation", "Lists & Tuples", "Dictionaries & Sets", "If/Else Conditions", "For & While Loops", "Functions & Scope", "File I/O Basics", "Error Handling (Try/Except)", "Final Script Project"],
     "html-basics": ["How the Web Works", "HTML5 Structure", "Headings & Paragraphs", "Lists & Links", "Images & Media", "Tables & Data", "Forms & Inputs", "Semantic HTML5 Elements", "Accessibility Basics", "Meta Tags & SEO Basics", "Project: Personal Webpage"],
@@ -357,6 +381,8 @@ const RP = (() => {
         {q: "Is this theoretical or practical?", a: "It bridges theory with practical industrial applications and design principles."}
       ]
     }
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 
   const CATEGORY_ICON = {
@@ -873,6 +899,7 @@ const RP = (() => {
     // ---- Utility ----
     relativeTime,
     getTotalTopicsDone,
+<<<<<<< HEAD
 
     // ---- Roadmap Details V2 ----
     getRoadmapDetails(id){ return ROADMAP_DETAILS[id] || ROADMAP_DETAILS['frontend-dev']; },
@@ -881,6 +908,8 @@ const RP = (() => {
       if(!r) return null;
       return { ...r, ...(ROADMAP_DETAILS[id] || {}) };
     },
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 
   /* ------------------------------------------------------------------
@@ -1200,6 +1229,10 @@ const RP = (() => {
 
   return {
     api, showToast, showXPToast, showConfetti, animateCounter, progressRingSVG,
+<<<<<<< HEAD
     initFAQ, initReveal, iconPath, roadmapCardHTML, resolvePath, ROADMAPS, ROADMAP_DETAILS
+=======
+    initFAQ, initReveal, iconPath, roadmapCardHTML, resolvePath, ROADMAPS
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 })();

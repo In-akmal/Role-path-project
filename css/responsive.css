@@ -102,6 +102,7 @@
   .stat-card-v2 { padding: 16px; }
   .stat-card-v2 .stat-value { font-size: 24px; }
 }
+<<<<<<< HEAD
 
 /* Roadmap Section V2 Responsive */
 @media (max-width: 1080px) {
@@ -131,3 +132,5 @@
   .roadmap-card-v2 .card-thumb { height: 130px; }
   .roadmap-card-v2 .card-body { padding: 14px 16px 16px; }
 }
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec

@@ -1,20 +1,34 @@
 /* ==========================================================================
+<<<<<<< HEAD
    RolePath — roadmap.js (V2)
    Powers roadmap-details.html: topics, tabs, progress, and metadata rendering.
+=======
+   RolePath — roadmap.js
+   Powers roadmap-details.html: topic checklist, progress bar, lock state.
+   In production, GET /api/roadmaps/{id} and POST /api/progress/{id}/{topic}
+   would replace the RP.api.* calls below.
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id") || "frontend-dev";
+<<<<<<< HEAD
   const roadmapMeta = RP.api.getRoadmapMeta(id);
 
   if(!roadmapMeta){
+=======
+  const roadmap = RP.api.getRoadmap(id);
+
+  if(!roadmap){
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
     document.getElementById("rdName").textContent = "Roadmap not found";
     document.getElementById("rdDesc").textContent = "This roadmap doesn't exist. Browse all roadmaps instead.";
     document.getElementById("topicList").innerHTML = "";
     return;
   }
 
+<<<<<<< HEAD
   const isFree = roadmapMeta.price === 0;
   const topics = RP.api.getTopics(id);
 
@@ -103,15 +117,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---- Progress & Locking Logic ----
   const unlocked = isFree || RP.api.isUnlocked(id);
+=======
+  const isFree = roadmap.price === 0;
+  const topics = RP.api.getTopics(id);
+
+  // ---- Header ----
+  document.title = roadmap.name + " — RolePath";
+  document.getElementById("badgeRow").innerHTML = `
+    <span class="badge ${isFree ? 'badge-free' : 'badge-premium'}">${isFree ? 'Free' : 'Premium'}</span>
+    <span class="difficulty-tag difficulty-${roadmap.difficulty.toLowerCase()}">${roadmap.difficulty}</span>`;
+  document.getElementById("rdName").textContent = roadmap.name;
+  document.getElementById("rdDesc").textContent = roadmap.desc;
+  document.getElementById("rdMeta").innerHTML = `
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>${roadmap.duration}</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M4 15h16M4 11h10M4 7h6"/></svg>${roadmap.category}</span>
+    <span class="price ${isFree ? 'free' : 'premium'}">${isFree ? 'FREE' : '₹29'}</span>`;
+
+  const unlocked = isFree || RP.api.isUnlocked(id);
+
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   if(isFree) RP.api.startFree(id);
 
   if(!unlocked){
     document.getElementById("topicList").style.display = "none";
+<<<<<<< HEAD
     document.getElementById("lockedOverlay").style.display = "flex";
     document.getElementById("unlockLink").href = "payment.html?id=" + id;
     document.getElementById("continueBtn").textContent = "Unlock for ₹" + roadmapMeta.price;
     document.getElementById("continueBtn").href = "payment.html?id=" + id;
     document.getElementById("stepperCard").style.display = "none";
+=======
+    document.getElementById("lockedOverlay").style.display = "block";
+    document.getElementById("unlockLink").href = "payment.html?id=" + id;
+    document.getElementById("continueBtn").textContent = "Unlock for ₹29";
+    document.getElementById("continueBtn").href = "payment.html?id=" + id;
+    document.querySelector(".sidebar-sticky .card:first-child").style.display = "none";
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
     renderStepper([]); // no progress yet
     return;
   }
@@ -122,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderTopics(){
     const progress = RP.api.getProgress(id);
     document.getElementById("topicList").innerHTML = topics.map((t, i) => `
+<<<<<<< HEAD
       <label class="topic-row-premium ${progress.done[i] ? 'done' : (!progress.done[i] && (i === 0 || progress.done[i-1]) ? 'current' : 'locked')}" data-index="${i}" style="animation-delay: ${i * 0.04}s">
         <div class="topic-checkbox-wrap">
           <input type="checkbox" class="topic-checkbox" ${progress.done[i] ? 'checked' : ''} data-topic="${i}">
@@ -132,11 +174,18 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="idx">${String(i+1).padStart(2,'0')}</span>
         <span class="name">${t}</span>
         ${!progress.done[i] ? '<span class="xp-badge-inline">+40 XP</span>' : ''}
+=======
+      <label class="topic-row ${progress.done[i] ? 'done' : ''}" data-index="${i}">
+        <input type="checkbox" ${progress.done[i] ? 'checked' : ''} data-topic="${i}">
+        <span class="idx">${String(i+1).padStart(2,'0')}</span>
+        <span class="name">${t}</span>
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
       </label>
     `).join("");
 
     document.querySelectorAll('[data-topic]').forEach(cb => {
       cb.addEventListener("change", (e) => {
+<<<<<<< HEAD
         const idx = parseInt(e.target.dataset.topic);
         const isChecked = e.target.checked;
         const progressBefore = RP.api.getProgress(id);
@@ -180,6 +229,25 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
         
+=======
+        const idx = e.target.dataset.topic;
+        const isChecked = e.target.checked;
+        const progressBefore = RP.api.getProgress(id);
+        
+        RP.api.setTopicDone(id, idx, isChecked);
+        e.target.closest(".topic-row").classList.toggle("done", isChecked);
+        
+        const progressAfter = RP.api.getProgress(id);
+        
+        if (isChecked && !progressBefore.done[idx]) {
+          RP.showXPToast(40);
+        }
+        
+        if (progressAfter.pct === 100 && progressBefore.pct < 100) {
+          RP.showConfetti();
+        }
+        
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
         renderProgress();
       });
     });
@@ -201,6 +269,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return `<div class="path-node ${cls}"><strong style="font-size:13px;">${t.split(" ").slice(0,4).join(" ")}${t.split(" ").length > 4 ? "…" : ""}</strong></div>`;
     }).join("");
   }
+<<<<<<< HEAD
 
   function showCompletionPopup() {
     const popup = document.createElement("div");
@@ -226,4 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => popup.remove(), 400);
     });
   }
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
 });

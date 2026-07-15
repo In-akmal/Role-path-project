@@ -113,7 +113,11 @@
     setTimeout(() => {
       grid.innerHTML = results.map((r, i) => {
         let html = RP.roadmapCardHTML(r, { pagesRelative: true });
+<<<<<<< HEAD
         return html.replace('class="roadmap-card-v2 reveal"', `class="roadmap-card-v2 animate-in"' style="animation-delay:${i*0.05}s"`);
+=======
+        return html.replace('class="roadmap-card reveal"', `class="roadmap-card animate-in" style="animation-delay:${i*0.05}s"`);
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
       }).join("");
       document.getElementById("emptyState").style.display = results.length ? "none" : "block";
       RP.initReveal();

@@ -58,10 +58,13 @@
         <p class="muted mt-8">Every roadmap you've started or unlocked, all in one place.</p>
       </div>
 
+<<<<<<< HEAD
       
       <div class="dash-stats-grid reveal in" style="margin-bottom:32px;" id="myStatsRow"></div>
       <div class="dash-welcome reveal in" style="margin-bottom:32px; display:none;" id="continueBanner"></div>
       
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
       <div class="tab-row reveal in">
         <button class="filter-pill active" data-tab="all">All</button>
         <button class="filter-pill" data-tab="premium">Premium</button>
@@ -97,6 +100,7 @@
 
     let activeTab = "all";
 
+<<<<<<< HEAD
     // --- V2 Additions: Stats Row & Continue Banner ---
     const enrolled = RP.api.getEnrolled();
     const myStatsRow = document.getElementById("myStatsRow");
@@ -156,10 +160,13 @@
     }
     // ------------------------------------------------
 
+=======
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
     function cardHTML(r, i){
       const progress = RP.api.getProgress(r.id);
       const isFree = r.price === 0;
       return `
+<<<<<<< HEAD
       <article class="learn-card glass-card premium-card-hover animate-in" style="animation-delay:${i*0.05}s; position:relative; overflow:hidden;">
         <div style="position:absolute; top:0; left:0; width:4px; height:100%; background:${isFree ? 'var(--success)' : 'var(--primary)'}; opacity:0.8;"></div>
         <div class="learn-thumb" style="background:${isFree ? 'linear-gradient(135deg,#22C55E,#16A34A)' : 'linear-gradient(135deg,#2563EB,#7C3AED)'}; width: 64px; height: 64px; border-radius: 16px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1);">
@@ -181,6 +188,28 @@
         <div class="learn-actions" style="display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap: 12px;">
           ${RP.progressRingSVG(progress.pct, 48, 4, progress.pct === 100 ? 'success' : '')}
           <a href="roadmap-details.html?id=${r.id}" class="btn ${progress.pct === 100 ? 'btn-success' : 'btn-primary'} btn-sm" style="border-radius: 8px; font-weight: 600; padding: 6px 16px;">${progress.pct > 0 ? (progress.pct === 100 ? 'Review' : 'Continue') : 'Start'}</a>
+=======
+      <article class="learn-card animate-in" style="animation-delay:${i*0.05}s">
+        <div class="learn-thumb" style="background:${isFree ? 'linear-gradient(135deg,#22C55E,#16A34A)' : 'linear-gradient(135deg,#2563EB,#7C3AED)'}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${RP.iconPath(r.icon)}"/></svg>
+        </div>
+        <div class="learn-info">
+          <div class="learn-title">${r.name}</div>
+          <div class="learn-meta">
+            <span class="badge ${isFree ? 'badge-free' : 'badge-premium'}">${isFree ? 'Free' : 'Premium'}</span>
+            <span class="dot"></span>
+            <span>${progress.doneCount}/${progress.total} topics</span>
+            <span class="dot"></span>
+            <span>${r.duration}</span>
+          </div>
+          <div style="margin-top:10px; font-size:12px; color:var(--text-faint); display:flex; align-items:center; gap:4px;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Last studied recently
+          </div>
+        </div>
+        <div class="learn-actions">
+          ${RP.progressRingSVG(progress.pct, 44, 3, progress.pct === 100 ? 'success' : '')}
+          <a href="roadmap-details.html?id=${r.id}" class="btn ${progress.pct === 100 ? 'btn-success' : 'btn-primary'} btn-sm">${progress.pct > 0 ? (progress.pct === 100 ? 'Review' : 'Continue') : 'Start'}</a>
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
         </div>
       </article>`;
     }

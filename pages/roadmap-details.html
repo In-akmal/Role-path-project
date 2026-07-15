@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/responsive.css">
 <style>
+<<<<<<< HEAD
   .rd-layout { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: flex-start; margin-top: 32px; }
   .tab-pane { display: none; animation: fadeInUp 0.4s var(--ease) both; }
   .tab-pane.active { display: block; }
@@ -16,6 +17,25 @@
   .faq-a { padding: 0 16px 16px; font-size: 13.5px; color: var(--text-muted); display: none; line-height: 1.5; }
   .faq-item.open .faq-a { display: block; }
   .faq-item.open .faq-q svg { transform: rotate(180deg); }
+=======
+  .rd-hero{ padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+  .rd-layout{ display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: flex-start; }
+  .topic-row{
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px; border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--card); margin-bottom: 12px; transition: border-color .18s var(--ease);
+  }
+  .topic-row.done{ border-color: var(--success); background: var(--success-100); }
+  .topic-row input{ width: 20px; height: 20px; margin-top: 2px; accent-color: var(--success); flex-shrink:0; }
+  .topic-row .idx{ font-family: var(--font-display); font-weight: 700; color: var(--text-faint); font-size: 13px; min-width: 22px; }
+  .topic-row.done .idx{ color: var(--success); }
+  .topic-row .name{ flex: 1; font-size: 14.5px; }
+  .topic-row.done .name{ text-decoration: line-through; color: var(--text-faint); }
+  .sidebar-sticky{ position: sticky; top: calc(var(--nav-height) + 24px); }
+  .locked-overlay{
+    text-align:center; padding: 48px 24px; border: 1.5px dashed var(--border); border-radius: var(--radius-lg);
+  }
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
 </style>
 </head>
 <body>
@@ -49,6 +69,7 @@
   </div>
 </header>
 
+<<<<<<< HEAD
 <section class="catalogue-hero">
   <div class="container">
     <div class="flex items-center gap-12" style="margin-bottom:16px;" id="badgeRow"></div>
@@ -115,16 +136,54 @@
           <span id="pctLabel" style="font-family:var(--font-display); font-weight:800; color:var(--primary); font-size:18px;">0%</span>
         </div>
         <div class="progress-track mt-12"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+=======
+<section class="rd-hero">
+  <div class="container">
+    <div class="flex items-center gap-12" style="margin-bottom:14px;" id="badgeRow"></div>
+    <h1 id="rdName" style="font-size:clamp(26px,4vw,38px);">Loading roadmap…</h1>
+    <p class="muted mt-8" id="rdDesc" style="max-width:640px;"></p>
+    <div class="roadmap-meta mt-16" id="rdMeta"></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container rd-layout">
+    <div>
+      <h2 style="font-size:20px; margin-bottom:20px;">Topics</h2>
+      <div id="topicList"></div>
+      <div class="locked-overlay" id="lockedOverlay" style="display:none;">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--text-faint)" stroke-width="1.5" style="margin:0 auto 16px;"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        <h3>This roadmap is locked</h3>
+        <p class="muted">Unlock it for ₹29 to see the full topic list and start tracking progress.</p>
+        <a href="payment.html" id="unlockLink" class="btn btn-primary">Unlock for ₹29</a>
+      </div>
+    </div>
+
+    <aside class="sidebar-sticky">
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <strong style="font-size:14px;">Your progress</strong>
+          <span id="pctLabel" style="font-family:var(--font-display); font-weight:700; color:var(--primary);">0%</span>
+        </div>
+        <div class="progress-track mt-8"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
         <div class="flex justify-between mt-16" style="font-size:13px;">
           <span class="muted">Completed</span><strong id="doneCount">0</strong>
         </div>
         <div class="flex justify-between" style="font-size:13px;">
           <span class="muted">Remaining</span><strong id="remainingCount">0</strong>
         </div>
+<<<<<<< HEAD
         <a href="dashboard.html" class="btn btn-primary btn-block mt-24" id="continueBtn">Continue Learning</a>
       </div>
 
       <div class="card mt-16" id="stepperCard">
+=======
+        <a href="dashboard.html" class="btn btn-secondary btn-block mt-24" id="continueBtn">Continue Learning</a>
+      </div>
+
+      <div class="card mt-16">
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
         <strong style="font-size:14px;">Path checkpoints</strong>
         <div class="path-stepper mt-16" id="pathStepper"></div>
       </div>
@@ -139,7 +198,14 @@
   </div>
 </footer>
 
+<<<<<<< HEAD
 <script src="../js/script.js?v=4"></script>
 <script src="../js/roadmap.js?v=4"></script>
 </body>
 </html>
+=======
+<script src="../js/script.js"></script>
+<script src="../js/roadmap.js"></script>
+</body>
+</html>
+>>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
