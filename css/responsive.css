@@ -1,0 +1,133 @@
+/* ==========================================================================
+   RolePath — Responsive rules
+   Breakpoints: 1080 / 860 / 620 / 420
+   ========================================================================== */
+
+@media (max-width: 1080px){
+  .roadmap-grid{ grid-template-columns: repeat(2, 1fr); }
+  .category-grid{ grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid{ grid-template-columns: repeat(2, 1fr); }
+  .steps-row{ grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+  .contact-wrap{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px){
+  .hero-inner{ grid-template-columns: 1fr; }
+  .hero-visual{ height: 300px; order: -1; }
+  .section{ padding: 64px 0; }
+
+  .nav-links{
+    position: fixed;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 12px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s var(--ease);
+    box-shadow: var(--shadow-md);
+  }
+  .nav-links.open{ max-height: 70vh; overflow-y: auto; }
+  .nav-links a{ padding: 12px 14px; }
+  .nav-toggle{ display: flex; }
+  .nav-links a.mobile-only-cta{ display: block; }
+}
+
+@media (min-width: 861px){
+  .mobile-only-cta{ display: none; }
+}
+
+@media (max-width: 620px){
+  .roadmap-grid, .category-grid, .benefits-grid, .steps-row{ grid-template-columns: 1fr; }
+  .footer-grid{ grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom{ flex-direction: column; gap: 12px; text-align: center; }
+  .social-row{ grid-template-columns: 1fr; }
+  .form-card{ padding: 26px; }
+  .hero{ padding: 56px 0 48px; }
+  .hero-cta{ flex-direction: column; }
+  .hero-cta .btn{ width: 100%; }
+  .contact-wrap{ gap: 32px; }
+}
+
+@media (max-width: 420px){
+  .container{ padding: 0 16px; }
+  .section-head h2{ font-size: 26px; }
+  .roadmap-body{ padding: 16px 18px 18px; }
+  .form-card{ padding: 20px; }
+}
+
+/* ========================================================================
+   New Dashboard Responsive Rules
+   ======================================================================== */
+
+@media (max-width: 1080px) {
+  .dash-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .dash-charts-row { grid-template-columns: 1fr; }
+  .dash-three-col { grid-template-columns: 1fr 1fr; }
+  .analytics-grid { grid-template-columns: repeat(2, 1fr); }
+  .badge-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .dash-hero-grid { grid-template-columns: 1fr; }
+  .dash-three-col { grid-template-columns: 1fr; }
+  .profile-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .dash-stats-grid { grid-template-columns: 1fr; }
+  .dash-grid { grid-template-columns: 1fr !important; }
+  .dash-two-col { grid-template-columns: 1fr !important; }
+  .analytics-grid { grid-template-columns: 1fr; }
+  .badge-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-stat-pill { font-size: 12px; padding: 6px 12px; }
+  .heatmap-grid { gap: 2px; }
+  .heatmap-cell { width: 11px; height: 11px; }
+  .quick-actions { gap: 8px; }
+  .quick-action { padding: 8px 12px; font-size: 12px; }
+  .learn-card { flex-direction: column; }
+  .learn-card .learn-actions { flex-direction: row; width: 100%; justify-content: space-between; margin-top: 8px; }
+  .rd-layout { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 420px) {
+  .dash-welcome { padding: 20px; }
+  .dash-welcome .greeting { font-size: 22px; }
+  .hero-stat-pill { font-size: 11px; padding: 5px 10px; gap: 6px; }
+  .stat-card-v2 { padding: 16px; }
+  .stat-card-v2 .stat-value { font-size: 24px; }
+}
+
+/* Roadmap Section V2 Responsive */
+@media (max-width: 1080px) {
+  .overview-grid { grid-template-columns: 1fr; }
+  .my-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .review-summary { flex-direction: column; text-align: center; }
+}
+@media (max-width: 860px) {
+  .details-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .details-tab { flex-shrink: 0; }
+}
+@media (max-width: 620px) {
+  .catalogue-hero .hero-title { font-size: 28px; }
+  .stats-bar { gap: 6px; }
+  .stat-chip { font-size: 12px; padding: 5px 10px; }
+  .trending-chips { gap: 6px; }
+  .my-stats-row { grid-template-columns: 1fr 1fr; }
+  .continue-banner { flex-direction: column; text-align: center; }
+  .roadmap-card-v2 .card-meta-row { gap: 8px; }
+  .login-gate-overlay { padding: 32px 20px; }
+  .login-gate-overlay .gate-actions { flex-direction: column; width: 100%; }
+  .login-gate-overlay .gate-actions .btn { width: 100%; }
+  .path-node-v2 .node-meta { display: none; }
+}
+@media (max-width: 420px) {
+  .catalogue-hero { padding: 32px 0 24px; }
+  .roadmap-card-v2 .card-thumb { height: 130px; }
+  .roadmap-card-v2 .card-body { padding: 14px 16px 16px; }
+}
