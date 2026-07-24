@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — RolePath</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg></span>
+      RolePath
+    </a>
+    <nav class="nav-links" data-nav-links>
+      <a href="../index.html" data-nav="index.html">Home</a>
+      <a href="roadmaps.html" data-nav="roadmaps.html">Roadmaps</a>
+      <a href="dashboard.html" data-nav="dashboard.html" class="active" data-auth-only>Dashboard</a>
+      <a href="my-roadmaps.html" data-nav="my-roadmaps.html" data-auth-only>My Roadmaps</a>
+      <a href="profile.html" data-nav="profile.html" data-auth-only>Profile</a>
+      <a href="login.html" class="mobile-only-cta" data-guest-only>Login</a>
+      <a href="register.html" class="mobile-only-cta" data-guest-only>Register</a>
+      <a href="#" data-logout data-auth-only class="mobile-only-cta">Logout</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      </button>
+      <a href="login.html" class="btn btn-secondary btn-sm" data-guest-only>Login</a>
+      <a href="register.html" class="btn btn-primary btn-sm" data-guest-only>Register</a>
+      <a href="profile.html" class="avatar-btn" data-auth-only style="display:none"><span data-user-initial>U</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="container">
+
+    <div id="guestNotice" class="empty-state" style="display:none;">
+      <h3>You're not logged in</h3>
+      <p>Log in to see your dashboard, progress and purchased roadmaps.</p>
+      <a href="login.html" class="btn btn-primary">Log In</a>
+    </div>
+
+    <div id="dashContent" style="display:none;" class="stagger-in">
+      
+      <!-- 1. Dashboard Hero Banner -->
+      <div class="dash-welcome animate-in">
+        <div class="dash-hero-grid">
+          <div>
+            <h1 class="greeting" id="dashGreeting">Good Morning, User!</h1>
+            <p class="greeting-sub" id="dashGreetingSub">Ready to continue your learning journey?</p>
+            <div class="hero-stats" id="heroStats">
+              <!-- JS will populate: Level, XP, Target -->
+            </div>
+          </div>
+          <div class="hero-visual" id="heroVisual">
+            <!-- Background grad handles visual -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Statistics Grid -->
+      <div class="dash-section dash-stats-grid animate-in" id="dashStatsGrid">
+        <!-- JS will populate 8 cards -->
+      </div>
+
+      <!-- 3. Progress Charts -->
+      <div class="dash-section dash-charts-row animate-in">
+        <div class="card glass-card">
+          <div class="dash-section-header">
+            <h2>Study Time (This Week)</h2>
+          </div>
+          <div class="chart-container">
+            <canvas id="weeklyChart"></canvas>
+          </div>
+        </div>
+        <div class="card glass-card">
+          <div class="dash-section-header">
+            <h2>Learning Progress (30 Days)</h2>
+          </div>
+          <div class="chart-container">
+            <canvas id="monthlyChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Multi-col Section (Main layout) -->
+      <div class="dash-section dash-three-col animate-in">
+        <!-- Left: Continue Learning & Heatmap -->
+        <div style="display:flex; flex-direction:column; gap:20px; grid-column: span 2 / span 2;">
+          
+          <!-- Continue Learning -->
+          <div class="card">
+            <div class="dash-section-header">
+              <h2>Continue Learning</h2>
+              <a href="my-roadmaps.html">View all →</a>
+            </div>
+            <div id="continueList" style="display:flex; flex-direction:column; gap:12px;"></div>
+            <div class="empty-state" id="noEnrolled" style="display:none;">
+              <h3>No roadmaps yet</h3>
+              <p>Start a free roadmap or unlock a premium one.</p>
+              <a href="roadmaps.html" class="btn btn-primary btn-sm mt-8">Browse</a>
+            </div>
+          </div>
+
+          <!-- Heatmap -->
+          <div class="card">
+            <div class="dash-section-header">
+              <h2>Learning Activity</h2>
+              <span class="muted" style="font-size:12px;" id="streakLabel">0 Day Streak</span>
+            </div>
+            <div class="heatmap-container">
+              <div class="heatmap-months" id="heatmapMonths"></div>
+              <div class="heatmap-grid" id="heatmapGrid"></div>
+            </div>
+            <div class="heatmap-legend">
+              <span>Less</span>
+              <div class="heatmap-cell" data-level="1"></div>
+              <div class="heatmap-cell" data-level="2"></div>
+              <div class="heatmap-cell" data-level="3"></div>
+              <div class="heatmap-cell" data-level="4"></div>
+              <span>More</span>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="card">
+            <div class="dash-section-header">
+              <h2>Recent Achievements</h2>
+              <a href="profile.html">View profile →</a>
+            </div>
+            <div class="badge-grid" id="badgeGrid"></div>
+          </div>
+          
+        </div>
+
+        <!-- Right: Sidebar components -->
+        <div style="display:flex; flex-direction:column; gap:20px;">
+          
+          <!-- Quick Actions -->
+          <div class="quick-actions" id="quickActions">
+            <a href="roadmaps.html" class="quick-action"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Browse</a>
+            <a href="my-roadmaps.html" class="quick-action"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> My Courses</a>
+          </div>
+
+          <!-- Daily Challenge -->
+          <div class="challenge-card" id="dailyChallengeCard">
+            <div class="challenge-header">
+              <span class="eyebrow" style="margin:0; color:var(--primary);">Daily Challenge</span>
+              <span class="challenge-reward" id="dcReward">+120 XP</span>
+            </div>
+            <h3 style="font-size:16px; margin-bottom:12px;">Complete <span id="dcTarget">2</span> topics today</h3>
+            <div class="progress-track" style="background:var(--bg); margin-bottom:8px;"><div class="progress-fill" id="dcProgress" style="width:0%;"></div></div>
+            <div class="flex justify-between muted" style="font-size:12px;"><span id="dcStatus">0 / 2 completed</span></div>
+          </div>
+
+          <!-- Notifications -->
+          <div class="card">
+            <div class="dash-section-header"><h2 style="font-size:15px;">Updates</h2></div>
+            <div class="notif-list" id="notifList"></div>
+          </div>
+
+          <!-- Analytics Mini -->
+          <div class="card">
+            <div class="dash-section-header"><h2 style="font-size:15px;">Quick Stats</h2></div>
+            <div class="analytics-grid" id="analyticsGrid"></div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="card">
+            <div class="dash-section-header"><h2 style="font-size:15px;">Timeline</h2></div>
+            <div class="timeline" id="activityList"></div>
+          </div>
+
+          <!-- Recommendations -->
+          <div class="card">
+            <div class="dash-section-header"><h2 style="font-size:15px;">Recommended</h2></div>
+            <div id="recList"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-bottom" style="border-top:none; padding-top:0;">
+    <span>© 2026 RolePath. All rights reserved.</span>
+    <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script src="../js/dashboard.js"></script>
+</body>
+</html>
