@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RolePath — Structured Career Roadmaps for Students</title>
+<meta name="description" content="Stop searching random tutorials. RolePath gives you a structured, step-by-step roadmap for any career — track your progress from beginner to job-ready.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============================= NAVBAR ============================= -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg>
+      </span>
+      RolePath
+    </a>
+
+    <nav class="nav-links" data-nav-links>
+      <a href="index.html" data-nav="index.html" class="active">Home</a>
+      <a href="pages/roadmaps.html" data-nav="roadmaps.html">Roadmaps</a>
+      <a href="pages/dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
+      <a href="pages/my-roadmaps.html" data-nav="my-roadmaps.html" data-auth-only>My Roadmaps</a>
+      <a href="pages/profile.html" data-nav="profile.html" data-auth-only>Profile</a>
+      <a href="pages/login.html" class="mobile-only-cta" data-guest-only>Login</a>
+      <a href="pages/register.html" class="mobile-only-cta" data-guest-only>Register</a>
+      <a href="#" data-logout data-auth-only class="mobile-only-cta">Logout</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      </button>
+      <a href="pages/login.html" class="btn btn-secondary btn-sm" data-guest-only>Login</a>
+      <a href="pages/register.html" class="btn btn-primary btn-sm" data-guest-only>Register</a>
+      <a href="pages/dashboard.html" class="avatar-btn" data-auth-only style="display:none"><span data-user-initial>U</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================= HERO ============================= -->
+<section class="hero">
+  <svg class="hero-bg-path" viewBox="0 0 1200 600" preserveAspectRatio="none">
+    <path d="M-50 500 C 200 500, 250 300, 500 320 S 800 150, 1000 180 S 1250 100 1300 60" stroke="#2563EB" stroke-width="2" fill="none" stroke-dasharray="6 10" opacity="0.35"/>
+  </svg>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">For students choosing a career</span>
+      <h1>Stop guessing.<br>Follow a <span class="accent">clear path</span> to your career.</h1>
+      <p>Random YouTube videos and scattered tutorials waste your time. RolePath gives you one structured roadmap per career, checkpoint by checkpoint, so you always know what to learn next.</p>
+      <div class="hero-cta">
+        <a href="pages/roadmaps.html" class="btn btn-primary btn-lg">Explore Roadmaps</a>
+        <a href="pages/register.html" class="btn btn-secondary btn-lg">Create Free Account</a>
+      </div>
+      <div class="hero-search">
+        <form class="search-bar" role="search" id="heroSearchForm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" id="heroSearchInput" placeholder="Search “Frontend Developer”, “Data Science”…" aria-label="Search roadmaps">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <div class="hero-trust">
+        <span><strong>19</strong> career roadmaps</span>
+        <span><strong>11</strong> categories</span>
+        <span><strong>₹29</strong> flat premium price</span>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-card-float" style="top:6%; left:4%; width:220px;">
+        <div class="flex items-center gap-8"><span class="difficulty-tag difficulty-beginner">Beginner</span></div>
+        <h4 style="font-size:14.5px;margin-top:10px;">Python Basics</h4>
+        <div class="progress-track mt-8"><div class="progress-fill" style="width:40%"></div></div>
+      </div>
+      <div class="hero-card-float" style="top:38%; right:2%; width:210px; animation-delay:1.2s;">
+        <div class="flex items-center gap-8"><span class="difficulty-tag difficulty-intermediate">Intermediate</span></div>
+        <h4 style="font-size:14.5px;margin-top:10px;">Frontend Developer</h4>
+        <div class="progress-track mt-8"><div class="progress-fill" style="width:68%"></div></div>
+      </div>
+      <div class="hero-card-float" style="bottom:6%; left:12%; width:230px; animation-delay:2.4s;">
+        <div class="flex items-center gap-12">
+          <div class="testimonial-avatar" style="width:34px;height:34px;font-size:12px;">RS</div>
+          <div>
+            <h4 style="font-size:13.5px;">Roadmap unlocked</h4>
+            <span class="muted" style="font-size:12px;">AI Engineer · ₹29</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FEATURED ROADMAPS ============================= -->
+<section class="section" id="featured">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Featured</span>
+      <h2>Popular roadmaps students start with</h2>
+      <p>Hand-picked paths across the categories students ask about most.</p>
+    </div>
+    <div class="roadmap-grid" id="featuredGrid"></div>
+  </div>
+</section>
+
+<!-- ============================= FREE ROADMAPS ============================= -->
+<section class="section section-tight" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Start free</span>
+      <h2>Free beginner roadmaps</h2>
+      <p>No payment, no signup friction — start learning the basics right now.</p>
+    </div>
+    <div class="roadmap-grid" id="freeGrid"></div>
+  </div>
+</section>
+
+<!-- ============================= PREMIUM ROADMAPS ============================= -->
+<section class="section" id="premium">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Go all in — ₹29</span>
+      <h2>Premium career roadmaps</h2>
+      <p>Complete, job-focused learning paths for one flat price. No subscriptions.</p>
+    </div>
+    <div class="roadmap-grid" id="premiumGrid"></div>
+    <div class="text-center mt-48">
+      <a href="pages/roadmaps.html" class="btn btn-secondary">View All 19 Roadmaps</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= HOW IT WORKS ============================= -->
+<section class="section section-tight" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Simple by design</span>
+      <h2>How RolePath works</h2>
+    </div>
+    <div class="steps-row reveal">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <h3>Pick a roadmap</h3>
+        <p>Browse 19 roadmaps across 11 categories and choose your career direction.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <h3>Start free or unlock</h3>
+        <p>Begin instantly with a free beginner path, or unlock a full career roadmap for ₹29.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <h3>Check off topics</h3>
+        <p>Mark each topic complete as you study — your progress bar updates automatically.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">04</div>
+        <h3>Track from your dashboard</h3>
+        <p>Pick up exactly where you left off, any time, from a single dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= BENEFITS ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why RolePath</span>
+      <h2>Built to remove the guesswork</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>One clear order</h3>
+        <p class="muted">No more deciding what to learn first — every roadmap is sequenced for you.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Track real progress</h3>
+        <p class="muted">Checkboxes and progress bars that actually reflect how far you've come.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h3>Flat ₹29 pricing</h3>
+        <p class="muted">Every premium roadmap costs the same — no confusing tiers or subscriptions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= TESTIMONIALS ============================= -->
+<section class="section section-tight" style="background:var(--bg-alt)">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Student stories</span>
+      <h2>Students who found their path</h2>
+    </div>
+    <div class="roadmap-grid reveal">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I kept switching between five different YouTube playlists before this. The Frontend Developer roadmap finally gave me one order to follow."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">AN</div>
+          <div><strong>Ananya N.</strong><div class="role">2nd year, B.Tech CSE</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Unlocked AI Engineer for ₹29 and it genuinely covers what I needed — math, ML basics, and deployment, in that order."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">RK</div>
+          <div><strong>Rahul K.</strong><div class="role">Final year, ECE</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"The progress bar keeps me honest. I can see exactly how much of Data Science I've actually finished."</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">SP</div>
+          <div><strong>Sneha P.</strong><div class="role">3rd year, IT</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FAQ ============================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list reveal" style="max-width:760px;margin:0 auto;">
+      <div class="faq-item open">
+        <button class="faq-question">Are the free roadmaps really free forever?<span class="plus">+</span></button>
+        <div class="faq-answer" style="max-height:200px"><p>Yes. Java Basics, Python Basics, HTML Basics, CSS Basics and C Programming Basics stay free with no hidden costs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What do I get for ₹29?<span class="plus">+</span></button>
+        <div class="faq-answer"><p>A complete career roadmap — every topic from fundamentals to job-ready, structured in order, with progress tracking.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a subscription?<span class="plus">+</span></button>
+        <div class="faq-answer"><p>No. Every premium roadmap is a one-time ₹29 payment. Once unlocked, it's yours in your dashboard permanently.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I switch roadmaps later?<span class="plus">+</span></button>
+        <div class="faq-answer"><p>Yes. You can start as many free roadmaps as you like and unlock any premium roadmap independently.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section class="section section-tight" style="background:var(--bg-alt)" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>We're happy to help</h2>
+      <p>Questions about a roadmap or a payment? Reach out any time.</p>
+    </div>
+    <div class="contact-wrap reveal">
+      <div>
+        <div class="contact-info-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></div>
+          <div><strong>Email</strong><div class="muted">support@rolepath.in</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L9 9.9a16 16 0 0 0 5.1 5.1l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><strong>Phone</strong><div class="muted">+91 90000 12345</div></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><strong>Based in</strong><div class="muted">Hyderabad, India</div></div>
+        </div>
+      </div>
+      <form class="form-card" id="contactForm">
+        <div class="form-group"><label for="cName">Full name</label><input class="form-control" id="cName" required></div>
+        <div class="form-group"><label for="cEmail">Email</label><input type="email" class="form-control" id="cEmail" required></div>
+        <div class="form-group"><label for="cMsg">Message</label><textarea class="form-control" id="cMsg" rows="4" required></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg></span>RolePath</a>
+        <p>Structured career roadmaps so students always know what to learn next.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4 4 0 0 0-6.9 3.6A11.4 11.4 0 0 1 3.7 4.9a4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5v.1a4 4 0 0 0 3.3 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.8 2.8A8 8 0 0 1 2 18.6a11.4 11.4 0 0 0 6.2 1.8c7.4 0 11.5-6.2 11.5-11.5v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.4H3.3V21H6.9V8.4zM5.1 3a2 2 0 1 0 0 4.1 2 2 0 0 0 0-4.1zM21 21v-7c0-3.4-1.8-5-4.2-5-1.9 0-2.8 1-3.3 1.8V8.4H10v12.7h3.5v-6.6c0-.9.2-1.9 1.7-1.9 1.4 0 1.5 1.3 1.5 1.9V21H21z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2 0 2 .2 2.4.4a4.8 4.8 0 0 1 2.8 2.8c.2.4.4 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 2-.4 2.4a4.8 4.8 0 0 1-2.8 2.8c-.4.2-1.2.4-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-2-.2-2.4-.4a4.8 4.8 0 0 1-2.8-2.8c-.2-.4-.4-1.2-.4-2.4C2 15.6 2 15.2 2 12s0-3.6.1-4.9c0-1.2.2-2 .4-2.4A4.8 4.8 0 0 1 5.3 2c.4-.2 1.2-.4 2.4-.4C8.9 2.2 9.3 2.2 12 2.2zm0 3a4.8 4.8 0 1 0 0 9.7 4.8 4.8 0 0 0 0-9.7zm0 7.9a3.1 3.1 0 1 1 0-6.3 3.1 3.1 0 0 1 0 6.3zm5-8.1a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="pages/roadmaps.html">Roadmaps</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RolePath. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">FAQ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const all = RP.api.getRoadmaps();
+    const featuredIds = ["frontend-dev","ai-engineer","data-scientist","cloud-engineer","cyber-security","java-fullstack"];
+    document.getElementById("featuredGrid").innerHTML = featuredIds.map(id => RP.roadmapCardHTML(RP.api.getRoadmap(id))).join("");
+    document.getElementById("freeGrid").innerHTML = all.filter(r => r.price === 0).map(r => RP.roadmapCardHTML(r)).join("");
+    document.getElementById("premiumGrid").innerHTML = all.filter(r => r.price > 0).slice(0,6).map(r => RP.roadmapCardHTML(r)).join("");
+    RP.initReveal();
+
+    document.getElementById("heroSearchForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const q = document.getElementById("heroSearchInput").value.trim();
+      window.location.href = "pages/roadmaps.html" + (q ? "?q=" + encodeURIComponent(q) : "");
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      RP.showToast("Message sent — we'll get back to you soon!");
+      e.target.reset();
+    });
+  });
+</script>
+</body>
+</html>
