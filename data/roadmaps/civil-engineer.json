@@ -1,0 +1,1361 @@
+{
+  "id": "civil-engineer",
+  "metadata": {
+    "title": "Civil Engineering Basics",
+    "description": "Comprehensive guide and roadmap for Civil Engineering Basics, providing an exhaustive learning path from fundamentals to advanced concepts.",
+    "difficulty": "Intermediate",
+    "duration": "16 Weeks",
+    "category": "Engineering & Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "civil-engineer-m1",
+      "title": "Module 1: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "civil-engineer-m1-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 1",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m1-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 1",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m1-l1"
+        },
+        {
+          "id": "civil-engineer-m1-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 1",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m1-l2"
+        },
+        {
+          "id": "civil-engineer-m1-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 1",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m1-l3"
+        },
+        {
+          "id": "civil-engineer-m1-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 1",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m1-l4"
+        },
+        {
+          "id": "civil-engineer-m1-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 1",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M1L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M1L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 1, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M1L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m1-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 1 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "civil-engineer-m2",
+      "title": "Module 2: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "civil-engineer-m2-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 2",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m2-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 2",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m2-l1"
+        },
+        {
+          "id": "civil-engineer-m2-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 2",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m2-l2"
+        },
+        {
+          "id": "civil-engineer-m2-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 2",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m2-l3"
+        },
+        {
+          "id": "civil-engineer-m2-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 2",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m2-l4"
+        },
+        {
+          "id": "civil-engineer-m2-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 2",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M2L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M2L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 2, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M2L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m2-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 2 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "civil-engineer-m3",
+      "title": "Module 3: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "civil-engineer-m3-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 3",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m3-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 3",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m3-l1"
+        },
+        {
+          "id": "civil-engineer-m3-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 3",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m3-l2"
+        },
+        {
+          "id": "civil-engineer-m3-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 3",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m3-l3"
+        },
+        {
+          "id": "civil-engineer-m3-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 3",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m3-l4"
+        },
+        {
+          "id": "civil-engineer-m3-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 3",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M3L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M3L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 3, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M3L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m3-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 3 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "civil-engineer-m4",
+      "title": "Module 4: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "civil-engineer-m4-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 4",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m4-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 4",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m4-l1"
+        },
+        {
+          "id": "civil-engineer-m4-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 4",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m4-l2"
+        },
+        {
+          "id": "civil-engineer-m4-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 4",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m4-l3"
+        },
+        {
+          "id": "civil-engineer-m4-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 4",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m4-l4"
+        },
+        {
+          "id": "civil-engineer-m4-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 4",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M4L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M4L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 4, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M4L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m4-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 4 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "civil-engineer-m5",
+      "title": "Module 5: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "civil-engineer-m5-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 5",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m5-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 5",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m5-l1"
+        },
+        {
+          "id": "civil-engineer-m5-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 5",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m5-l2"
+        },
+        {
+          "id": "civil-engineer-m5-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 5",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m5-l3"
+        },
+        {
+          "id": "civil-engineer-m5-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 5",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m5-l4"
+        },
+        {
+          "id": "civil-engineer-m5-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 5",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M5L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M5L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 5, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M5L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m5-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 5 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "civil-engineer-m6",
+      "title": "Module 6: Core of Civil Engineering Basics",
+      "estimatedTime": "15 Hours",
+      "order": 6,
+      "lessons": [
+        {
+          "id": "civil-engineer-m6-l1",
+          "title": "Civil Engineering Basics Concept 1 of Module 6",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L1",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L1",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 1.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "civil-engineer-m6-l2",
+          "title": "Civil Engineering Basics Concept 2 of Module 6",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L2",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L2",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 2.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m6-l1"
+        },
+        {
+          "id": "civil-engineer-m6-l3",
+          "title": "Civil Engineering Basics Concept 3 of Module 6",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L3",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L3",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 3.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m6-l2"
+        },
+        {
+          "id": "civil-engineer-m6-l4",
+          "title": "Civil Engineering Basics Concept 4 of Module 6",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L4",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L4",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 4.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m6-l3"
+        },
+        {
+          "id": "civil-engineer-m6-l5",
+          "title": "Civil Engineering Basics Concept 5 of Module 6",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L5",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L5",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 5.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m6-l4"
+        },
+        {
+          "id": "civil-engineer-m6-l6",
+          "title": "Civil Engineering Basics Concept 6 of Module 6",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs for M6L6",
+              "url": "https://example.com"
+            },
+            {
+              "type": "Video",
+              "title": "Video Tutorial M6L6",
+              "url": "https://example.com/video"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for Module 6, Lesson 6.",
+            "challenge": "Implement the concept without looking at the reference code."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini project M6L6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "civil-engineer-m6-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 6 Assessment Project",
+        "difficulty": "Intermediate"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Midpoint Evaluation",
+      "requiredLessons": [
+        "civil-engineer-m3-l6"
+      ],
+      "reward": "Intermediate Milestone Badge",
+      "skillsMastered": [
+        "Core Conceptual Mastery"
+      ],
+      "projectsCompleted": 3,
+      "xpEarned": 1500
+    }
+  ],
+  "finalProject": {
+    "title": "Civil Engineering Basics Ultimate Capstone",
+    "description": "Final assessment project to validate complete mastery of Civil Engineering Basics.",
+    "skills": [
+      "Architecture",
+      "Implementation",
+      "Debugging",
+      "Deployment"
+    ],
+    "portfolioReady": true
+  }
+}

@@ -15,49 +15,45 @@ const RP = (() => {
      1. ROADMAP CATALOGUE (dummy data — would come from GET /api/roadmaps)
      ------------------------------------------------------------------ */
   const ROADMAPS = [
-<<<<<<< HEAD
-    { id: "java-basics", name: "Java Basics", category: "Software Development", desc: "Core syntax, OOP fundamentals and problem solving in Java.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.8, students: 4200, tags: ["Java", "OOP", "Data Types", "Control Flow"], demand: "High" },
-    { id: "python-basics", name: "Python Basics", category: "Software Development", desc: "Variables, control flow, functions and your first scripts.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.9, students: 5000, tags: ["Python", "Scripting", "Functions", "Syntax"], demand: "Very High" },
-    { id: "html-basics", name: "HTML Basics", category: "Software Development", desc: "Structure the web with semantic, accessible markup.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout", rating: 4.7, students: 3800, tags: ["HTML5", "Web", "Markup", "Semantic"], demand: "High" },
-    { id: "css-basics", name: "CSS Basics", category: "Software Development", desc: "Layout, responsive design and styling fundamentals.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout", rating: 4.7, students: 3500, tags: ["CSS3", "Flexbox", "Grid", "Responsive"], demand: "High" },
-    { id: "c-basics", name: "C Programming Basics", category: "Software Development", desc: "Memory, pointers and the fundamentals every engineer needs.", duration: "5 Weeks", difficulty: "Beginner", price: 0, icon: "cpu", rating: 4.6, students: 2100, tags: ["C", "Pointers", "Memory", "Logic"], demand: "Growing" },
+    // Free Learning
+    { id: "c-basics", name: "C Programming Basics", category: "Free Learning", desc: "Memory, pointers and the fundamentals every engineer needs.", duration: "5 Weeks", difficulty: "Beginner", price: 0, icon: "cpu", rating: 4.6, students: 2100, tags: ["C", "Pointers", "Logic"], demand: "Growing" },
+    { id: "cpp-basics", name: "C++ Basics", category: "Free Learning", desc: "Object-oriented programming and STL fundamentals.", duration: "4 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.7, students: 1800, tags: ["C++", "OOP", "STL"], demand: "High" },
+    { id: "java-basics", name: "Java Basics", category: "Free Learning", desc: "Core syntax, OOP fundamentals and problem solving in Java.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.8, students: 4200, tags: ["Java", "OOP", "Data Types"], demand: "High" },
+    { id: "python-basics", name: "Python Basics", category: "Free Learning", desc: "Variables, control flow, functions and your first scripts.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code", rating: 4.9, students: 5000, tags: ["Python", "Scripting", "Syntax"], demand: "Very High" },
+    { id: "sql-basics", name: "SQL Basics", category: "Free Learning", desc: "Relational databases, queries, and data manipulation.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "database", rating: 4.8, students: 3000, tags: ["SQL", "Databases", "Queries"], demand: "Very High" },
 
-    { id: "java-fullstack", name: "Java Full Stack Developer", category: "Software Development", desc: "Spring Boot, REST APIs, React and databases end to end.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code", rating: 4.8, students: 2800, tags: ["Java", "Spring Boot", "React", "PostgreSQL", "REST"], demand: "Very High" },
-    { id: "python-fullstack", name: "Python Full Stack Developer", category: "Software Development", desc: "Django, REST APIs and modern frontend integration.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code", rating: 4.7, students: 2400, tags: ["Python", "Django", "React", "SQL", "APIs"], demand: "High" },
-    { id: "frontend-dev", name: "Frontend Developer", category: "Software Development", desc: "HTML, CSS, JavaScript and modern UI frameworks.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "layout", rating: 4.9, students: 3500, tags: ["React", "JavaScript", "CSS", "UI/UX", "Git"], demand: "Very High" },
-    { id: "backend-dev", name: "Backend Developer", category: "Software Development", desc: "APIs, databases, authentication and system design.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "server", rating: 4.8, students: 2900, tags: ["Node.js", "Express", "MongoDB", "System Design", "Auth"], demand: "Very High" },
-    { id: "ai-engineer", name: "AI Engineer", category: "Artificial Intelligence", desc: "Machine learning, neural networks and deployment pipelines.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "cpu", rating: 4.9, students: 2100, tags: ["Python", "TensorFlow", "PyTorch", "ML", "Deep Learning"], demand: "Very High" },
-    { id: "data-scientist", name: "Data Scientist", category: "Data Science", desc: "Statistics, Python, visualization and predictive modelling.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "chart", rating: 4.7, students: 1800, tags: ["Python", "Pandas", "Scikit-Learn", "Stats", "Data Viz"], demand: "High" },
-    { id: "cloud-engineer", name: "Cloud Engineer", category: "Cloud Computing", desc: "AWS, Azure fundamentals, deployment and scaling.", duration: "10 Months", difficulty: "Intermediate", price: 29, icon: "cloud", rating: 4.8, students: 2300, tags: ["AWS", "Azure", "Cloud Concepts", "Docker", "Linux"], demand: "Very High" },
-    { id: "devops-engineer", name: "DevOps Engineer", category: "Cloud Computing", desc: "CI/CD, containers, orchestration and infrastructure as code.", duration: "10 Months", difficulty: "Advanced", price: 29, icon: "cloud", rating: 4.8, students: 1900, tags: ["Kubernetes", "Docker", "CI/CD", "Terraform", "Jenkins"], demand: "Very High" },
-    { id: "cyber-security", name: "Cyber Security", category: "Cyber Security", desc: "Network security, ethical hacking and threat defence.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "shield", rating: 4.7, students: 1600, tags: ["Network Sec", "Ethical Hacking", "Kali Linux", "OWASP", "Crypto"], demand: "Growing" },
-    { id: "civil-engineer", name: "Civil Engineer", category: "Civil Engineering", desc: "Structural design, surveying and construction management.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "building", rating: 4.5, students: 1100, tags: ["AutoCAD", "Structures", "Surveying", "Materials", "Management"], demand: "Growing" },
-    { id: "mechanical-engineer", name: "Mechanical Engineer", category: "Mechanical Engineering", desc: "Thermodynamics, CAD design and manufacturing systems.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear", rating: 4.6, students: 1300, tags: ["SolidWorks", "Thermodynamics", "CAD", "Manufacturing", "Mechanics"], demand: "High" },
-    { id: "automobile-engineer", name: "Automobile Engineer", category: "Automobile Engineering", desc: "Vehicle systems, powertrains and automotive design.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear", rating: 4.5, students: 950, tags: ["Automotive", "Powertrains", "Design", "EV", "Dynamics"], demand: "Growing" },
-    { id: "electronics-engineer", name: "Electronics Engineer", category: "Electronics Engineering", desc: "Circuit design, embedded systems and signal processing.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "chip", rating: 4.6, students: 1200, tags: ["Circuits", "Embedded C", "Microcontrollers", "Signals", "IoT"], demand: "High" },
-    { id: "electrical-engineer", name: "Electrical Engineer", category: "Electrical Engineering", desc: "Power systems, machines and control fundamentals.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "bolt", rating: 4.5, students: 1400, tags: ["Power Systems", "Machines", "Control Systems", "High Voltage", "Renewables"], demand: "High" }
-=======
-    { id: "java-basics", name: "Java Basics", category: "Software Development", desc: "Core syntax, OOP fundamentals and problem solving in Java.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code" },
-    { id: "python-basics", name: "Python Basics", category: "Software Development", desc: "Variables, control flow, functions and your first scripts.", duration: "6 Weeks", difficulty: "Beginner", price: 0, icon: "code" },
-    { id: "html-basics", name: "HTML Basics", category: "Software Development", desc: "Structure the web with semantic, accessible markup.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout" },
-    { id: "css-basics", name: "CSS Basics", category: "Software Development", desc: "Layout, responsive design and styling fundamentals.", duration: "3 Weeks", difficulty: "Beginner", price: 0, icon: "layout" },
-    { id: "c-basics", name: "C Programming Basics", category: "Software Development", desc: "Memory, pointers and the fundamentals every engineer needs.", duration: "5 Weeks", difficulty: "Beginner", price: 0, icon: "cpu" },
+    // Web Development
+    { id: "web-dev", name: "Web Development Basics", category: "Web Development", desc: "HTML, CSS, JS and Git fundamentals.", duration: "10 Weeks", difficulty: "Beginner", price: 29, icon: "globe", rating: 4.8, students: 4000, tags: ["HTML", "CSS", "JS", "Git"], demand: "Very High" },
 
-    { id: "java-fullstack", name: "Java Full Stack Developer", category: "Software Development", desc: "Spring Boot, REST APIs, React and databases end to end.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code" },
-    { id: "python-fullstack", name: "Python Full Stack Developer", category: "Software Development", desc: "Django, REST APIs and modern frontend integration.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "code" },
-    { id: "frontend-dev", name: "Frontend Developer", category: "Software Development", desc: "HTML, CSS, JavaScript and modern UI frameworks.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "layout" },
-    { id: "backend-dev", name: "Backend Developer", category: "Software Development", desc: "APIs, databases, authentication and system design.", duration: "8 Months", difficulty: "Intermediate", price: 29, icon: "server" },
-    { id: "ai-engineer", name: "AI Engineer", category: "Artificial Intelligence", desc: "Machine learning, neural networks and deployment pipelines.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "cpu" },
-    { id: "data-scientist", name: "Data Scientist", category: "Data Science", desc: "Statistics, Python, visualization and predictive modelling.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "chart" },
-    { id: "cloud-engineer", name: "Cloud Engineer", category: "Cloud Computing", desc: "AWS, Azure fundamentals, deployment and scaling.", duration: "10 Months", difficulty: "Intermediate", price: 29, icon: "cloud" },
-    { id: "devops-engineer", name: "DevOps Engineer", category: "Cloud Computing", desc: "CI/CD, containers, orchestration and infrastructure as code.", duration: "10 Months", difficulty: "Advanced", price: 29, icon: "cloud" },
-    { id: "cyber-security", name: "Cyber Security", category: "Cyber Security", desc: "Network security, ethical hacking and threat defence.", duration: "1 Year", difficulty: "Advanced", price: 29, icon: "shield" },
-    { id: "civil-engineer", name: "Civil Engineer", category: "Civil Engineering", desc: "Structural design, surveying and construction management.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "building" },
-    { id: "mechanical-engineer", name: "Mechanical Engineer", category: "Mechanical Engineering", desc: "Thermodynamics, CAD design and manufacturing systems.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear" },
-    { id: "automobile-engineer", name: "Automobile Engineer", category: "Automobile Engineering", desc: "Vehicle systems, powertrains and automotive design.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "gear" },
-    { id: "electronics-engineer", name: "Electronics Engineer", category: "Electronics Engineering", desc: "Circuit design, embedded systems and signal processing.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "chip" },
-    { id: "electrical-engineer", name: "Electrical Engineer", category: "Electrical Engineering", desc: "Power systems, machines and control fundamentals.", duration: "1 Year", difficulty: "Intermediate", price: 29, icon: "bolt" },
->>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
+    // Frontend Development
+    { id: "html-mastery", name: "HTML Mastery", category: "Frontend Development", desc: "Semantic HTML, accessibility, and forms.", duration: "2 Weeks", difficulty: "Beginner", price: 29, icon: "layout", rating: 4.7, students: 3800, tags: ["HTML5", "A11y", "Semantic"], demand: "High" },
+    { id: "css-mastery", name: "CSS Mastery", category: "Frontend Development", desc: "Flexbox, Grid, animations, and responsive design.", duration: "4 Weeks", difficulty: "Intermediate", price: 29, icon: "layout", rating: 4.8, students: 3500, tags: ["CSS3", "Flexbox", "Responsive"], demand: "Very High" },
+    { id: "js-mastery", name: "JavaScript Mastery", category: "Frontend Development", desc: "ES6+, DOM, async JS, and modern patterns.", duration: "8 Weeks", difficulty: "Intermediate", price: 29, icon: "code", rating: 4.9, students: 4500, tags: ["JS", "ES6+", "DOM"], demand: "Very High" },
+    { id: "react-js", name: "React.js", category: "Frontend Development", desc: "Hooks, state management, and modern SPA architecture.", duration: "6 Weeks", difficulty: "Advanced", price: 29, icon: "cpu", rating: 4.9, students: 5200, tags: ["React", "Hooks", "SPA"], demand: "Very High" },
+    { id: "typescript", name: "TypeScript", category: "Frontend Development", desc: "Static typing for scalable JavaScript applications.", duration: "4 Weeks", difficulty: "Advanced", price: 29, icon: "code", rating: 4.8, students: 3100, tags: ["TS", "Types", "Scale"], demand: "High" },
+    { id: "next-js", name: "Next.js", category: "Frontend Development", desc: "SSR, SSG, API routes, and full-stack React.", duration: "4 Weeks", difficulty: "Advanced", price: 29, icon: "server", rating: 4.9, students: 2800, tags: ["Next.js", "SSR", "React"], demand: "Very High" },
+
+    // Backend Development
+    { id: "nodejs-express", name: "Node.js & Express", category: "Backend Development", desc: "Server-side JS, REST APIs, and middleware.", duration: "6 Weeks", difficulty: "Intermediate", price: 29, icon: "server", rating: 4.8, students: 3900, tags: ["Node.js", "Express", "API"], demand: "Very High" },
+    { id: "python-django", name: "Python & Django", category: "Backend Development", desc: "Robust web applications with Python.", duration: "8 Weeks", difficulty: "Intermediate", price: 29, icon: "server", rating: 4.7, students: 2400, tags: ["Python", "Django", "ORM"], demand: "High" },
+    { id: "java-spring", name: "Java & Spring Boot", category: "Backend Development", desc: "Enterprise-grade microservices and APIs.", duration: "10 Weeks", difficulty: "Advanced", price: 29, icon: "server", rating: 4.8, students: 3500, tags: ["Java", "Spring", "Microservices"], demand: "Very High" },
+    { id: "sql-postgres", name: "SQL & PostgreSQL", category: "Backend Development", desc: "Relational database design and complex queries.", duration: "4 Weeks", difficulty: "Intermediate", price: 29, icon: "database", rating: 4.8, students: 2900, tags: ["SQL", "Postgres", "DB Design"], demand: "Very High" },
+    { id: "nosql-mongo", name: "NoSQL & MongoDB", category: "Backend Development", desc: "Document databases and flexible schemas.", duration: "3 Weeks", difficulty: "Intermediate", price: 29, icon: "database", rating: 4.7, students: 2600, tags: ["NoSQL", "MongoDB", "JSON"], demand: "High" },
+    { id: "go-backend", name: "Go Backend", category: "Backend Development", desc: "High-performance concurrent backend services.", duration: "6 Weeks", difficulty: "Advanced", price: 29, icon: "cpu", rating: 4.8, students: 1500, tags: ["Go", "Concurrency", "Performance"], demand: "Growing" },
+
+    // Full Stack Development
+    { id: "mern-stack", name: "MERN Stack", category: "Full Stack Development", desc: "MongoDB, Express, React, Node.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "globe", rating: 4.9, students: 5100, tags: ["MERN", "Full Stack", "JS"], demand: "Very High" },
+    { id: "mean-stack", name: "MEAN Stack", category: "Full Stack Development", desc: "MongoDB, Express, Angular, Node.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "globe", rating: 4.6, students: 2100, tags: ["MEAN", "Angular", "JS"], demand: "High" },
+    { id: "java-react", name: "Java + React", category: "Full Stack Development", desc: "Spring Boot backend with React frontend.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "globe", rating: 4.8, students: 3200, tags: ["Java", "React", "Enterprise"], demand: "Very High" },
+    { id: "python-react", name: "Python + React", category: "Full Stack Development", desc: "Django backend with React frontend.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "globe", rating: 4.7, students: 2800, tags: ["Python", "React", "Full Stack"], demand: "High" },
+    { id: "dotnet-angular", name: ".NET + Angular", category: "Full Stack Development", desc: "C# backend with Angular frontend.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "globe", rating: 4.7, students: 2500, tags: [".NET", "Angular", "C#"], demand: "High" },
+
+    // Data
+    { id: "data-analytics", name: "Data Analytics", category: "Data", desc: "Extract insights from raw data using SQL and Python.", duration: "12 Weeks", difficulty: "Intermediate", price: 29, icon: "chart", rating: 4.8, students: 3300, tags: ["Analytics", "SQL", "Python"], demand: "Very High" },
+    { id: "data-science", name: "Data Science", category: "Data", desc: "Statistics, modeling, and data visualization.", duration: "20 Weeks", difficulty: "Advanced", price: 29, icon: "chart", rating: 4.7, students: 2900, tags: ["Data Science", "Stats", "Models"], demand: "Very High" },
+    { id: "machine-learning", name: "Machine Learning", category: "Data", desc: "Supervised and unsupervised learning algorithms.", duration: "16 Weeks", difficulty: "Advanced", price: 29, icon: "cpu", rating: 4.9, students: 2200, tags: ["ML", "Algorithms", "AI"], demand: "Very High" },
+    { id: "deep-learning", name: "Deep Learning", category: "Data", desc: "Neural networks, PyTorch, and TensorFlow.", duration: "12 Weeks", difficulty: "Advanced", price: 29, icon: "cpu", rating: 4.8, students: 1500, tags: ["Deep Learning", "NN", "PyTorch"], demand: "High" },
+    { id: "power-bi", name: "Power BI", category: "Data", desc: "Business intelligence and interactive dashboards.", duration: "4 Weeks", difficulty: "Intermediate", price: 29, icon: "chart", rating: 4.7, students: 3100, tags: ["Power BI", "Dashboards", "BI"], demand: "Very High" }
   ];
 
   // Topic checklists for the roadmap-details page (dummy — GET /api/roadmaps/{id}/topics)
@@ -72,7 +68,6 @@ const RP = (() => {
       "Advanced concepts",
       "Portfolio capstone project",
     ],
-<<<<<<< HEAD
     "java-basics": ["Intro to Java & JVM", "Variables & Data Types", "Operators & Expressions", "Control Flow Statements", "Loops & Iterations", "Arrays & Strings", "Methods & Functions", "Introduction to OOP", "Classes & Objects", "Constructors", "Basic Inheritance", "Final Mini-Project"],
     "python-basics": ["Introduction to Python", "Variables & Types", "Basic Operators", "String Manipulation", "Lists & Tuples", "Dictionaries & Sets", "If/Else Conditions", "For & While Loops", "Functions & Scope", "File I/O Basics", "Error Handling (Try/Except)", "Final Script Project"],
     "html-basics": ["How the Web Works", "HTML5 Structure", "Headings & Paragraphs", "Lists & Links", "Images & Media", "Tables & Data", "Forms & Inputs", "Semantic HTML5 Elements", "Accessibility Basics", "Meta Tags & SEO Basics", "Project: Personal Webpage"],
@@ -91,7 +86,32 @@ const RP = (() => {
     "mechanical-engineer": ["Engineering Mathematics", "Engineering Mechanics (Statics & Dynamics)", "Thermodynamics", "Fluid Mechanics", "Heat & Mass Transfer", "Strength of Materials", "Kinematics & Dynamics of Machines", "Machine Design", "Manufacturing Processes", "Material Science", "CAD/CAM & SolidWorks", "Mechatronics & Robotics", "HVAC Systems", "Renewable Energy Systems", "Capstone Mechanical Project"],
     "automobile-engineer": ["Automotive Engines & Combustion", "Automotive Chassis & Suspension", "Transmission Systems", "Automotive Electrical & Electronics", "Vehicle Dynamics", "Automotive Safety Systems", "Electric & Hybrid Vehicles (EVs)", "Battery Management Systems", "Automotive Aerodynamics", "CAD for Auto Components", "Manufacturing of Auto Parts", "Automotive Testing & Homologation", "Autonomous Vehicles Basics", "Automotive Embedded Systems", "Capstone EV Project"],
     "electronics-engineer": ["Network Theory & Circuits", "Electronic Devices & Circuits", "Digital Electronics", "Analog Circuits", "Signals & Systems", "Microprocessors & Microcontrollers", "Embedded Systems Design", "Control Systems", "Electromagnetic Theory", "Communication Systems", "VLSI Design Basics", "Digital Signal Processing (DSP)", "Internet of Things (IoT)", "PCB Design (Altium/KiCad)", "Capstone Electronics Project"],
-    "electrical-engineer": ["Electric Circuits & Networks", "Electromagnetic Fields", "Electrical Machines (Transformers, Motors)", "Power Systems Generation", "Power Transmission & Distribution", "Power System Protection & Switchgear", "Control Systems Engineering", "Power Electronics", "Electrical Measurements & Instrumentation", "Microprocessors & Applications", "High Voltage Engineering", "Renewable Energy & Smart Grids", "Electric Drives", "Energy Management & Auditing", "Capstone Power Project"]
+    "electrical-engineer": ["Electric Circuits & Networks", "Electromagnetic Fields", "Electrical Machines (Transformers, Motors)", "Power Systems Generation", "Power Transmission & Distribution", "Power System Protection & Switchgear", "Control Systems Engineering", "Power Electronics", "Electrical Measurements & Instrumentation", "Microprocessors & Applications", "High Voltage Engineering", "Renewable Energy & Smart Grids", "Electric Drives", "Energy Management & Auditing", "Capstone Power Project"],
+    "cpp-basics": ["Introduction to C++","Variables and Data Types","Control Flow","Functions","Arrays and Pointers","Object-Oriented Programming","Classes and Objects","Inheritance and Polymorphism","File I/O","Standard Template Library (STL)","Capstone Project"],
+    "sql-basics": ["Introduction to SQL","Database Concepts","SELECT Queries","Filtering Data (WHERE)","Sorting and Paginating","Joins (INNER, LEFT, RIGHT)","Grouping Data (GROUP BY)","Subqueries","Modifying Data (INSERT, UPDATE, DELETE)","Database Design Basics","Capstone Queries"],
+    "web-dev": ["How the Web Works","HTML5 Basics","CSS3 Styling","Responsive Design Basics","JavaScript Fundamentals","DOM Manipulation","Version Control (Git)","Deploying a Website","Web Accessibility","Capstone Website"],
+    "html-mastery": ["HTML Elements & Tags","Document Structure","Forms and Inputs","Semantic HTML","Multimedia (Audio/Video)","Tables and Lists","Meta Tags and SEO Basics","HTML5 APIs","Accessibility (A11y)","Capstone HTML Project"],
+    "css-mastery": ["CSS Selectors","Box Model","Flexbox Layout","CSS Grid","Typography","Colors and Gradients","Transitions and Animations","Responsive Design & Media Queries","CSS Variables","CSS Architecture (BEM)","Capstone CSS Project"],
+    "js-mastery": ["JS Syntax & Variables","Functions & Scope","Arrays & Objects","DOM Manipulation","Events & Listeners","Asynchronous JS (Promises)","Fetch API & AJAX","ES6+ Features","Error Handling","Local Storage","Capstone JS App"],
+    "react-js": ["React Basics","Components & Props","State & Lifecycle","Handling Events","Conditional Rendering","Lists & Keys","Forms in React","React Hooks (useState, useEffect)","Context API","React Router","Capstone React App"],
+    "typescript": ["Why TypeScript?","Basic Types","Interfaces","Classes","Functions & Generics","Enums & Tuples","Type Inference & Compatibility","Advanced Types","Modules & Namespaces","TS with React/Node","Capstone TS Project"],
+    "next-js": ["Next.js Introduction","Pages & Routing","Data Fetching (SSR, SSG)","API Routes","Styling in Next.js","Image Optimization","Authentication","Deploying to Vercel","Performance Optimization","Capstone Next.js App"],
+    "nodejs-express": ["Node.js Basics","NPM & Modules","Express Framework","Routing & Middleware","RESTful API Design","Error Handling","Connecting to a Database","Authentication & JWT","File Uploads","Deploying Node Apps","Capstone API"],
+    "python-django": ["Django Setup","Models & Databases","Views & URLs","Templates","Forms & Validation","Django Admin","Authentication","Django REST Framework","Testing","Deployment","Capstone Django App"],
+    "java-spring": ["Spring Core","Dependency Injection","Spring Boot Setup","Spring MVC","Spring Data JPA","REST APIs","Spring Security","Testing Spring Apps","Microservices Basics","Deployment","Capstone Spring App"],
+    "sql-postgres": ["PostgreSQL Setup","Advanced SQL Queries","Indexes and Performance","Transactions and Concurrency","Stored Procedures","Triggers","Views","JSONB in Postgres","Database Backup","Capstone Postgres DB"],
+    "nosql-mongo": ["MongoDB Basics","CRUD Operations","Data Modeling","Indexes","Aggregation Framework","Replication & Sharding","Mongoose for Node.js","Security","Transactions","Capstone Mongo App"],
+    "go-backend": ["Go Basics","Structs & Interfaces","Concurrency (Goroutines)","Channels","Building HTTP Servers","Routing in Go","Database Connectivity","JSON Parsing","Testing Go Code","Deployment","Capstone Go API"],
+    "mern-stack": ["React Frontend Setup","Node/Express Backend","MongoDB Integration","State Management","Authentication (JWT)","API Integration","CRUD Operations","Deployment (Vercel/Render)","Capstone MERN App"],
+    "mean-stack": ["Angular Setup","Node/Express Backend","MongoDB Integration","Services & RxJS","Authentication (JWT)","API Integration","CRUD Operations","Deployment","Capstone MEAN App"],
+    "java-react": ["Spring Boot Backend","React Frontend","REST API Integration","CORS & Security","JWT Authentication","State Management","Database Integration","Testing & Debugging","Deployment","Capstone Full Stack App"],
+    "python-react": ["Django REST Framework","React Frontend","API Integration","CORS & Security","JWT Authentication","State Management","Database Integration","Testing & Debugging","Deployment","Capstone Full Stack App"],
+    "dotnet-angular": [".NET Core API","Angular Frontend","Entity Framework","Services & Dependency Injection","JWT Authentication","RxJS","CRUD Operations","Testing","Deployment","Capstone Full Stack App"],
+    "data-analytics": ["Data Analytics Basics","Excel for Data","SQL for Analytics","Python (Pandas)","Data Cleaning","Data Visualization","Tableau/Power BI","Statistical Analysis","Reporting","Capstone Analytics Project"],
+    "data-science": ["Python for Data Science","Math & Statistics","Data Wrangling","Exploratory Data Analysis","Machine Learning Basics","Supervised Learning","Unsupervised Learning","Model Evaluation","Data Storytelling","Capstone Data Science Project"],
+    "machine-learning": ["ML Fundamentals","Scikit-Learn","Regression Algorithms","Classification Algorithms","Clustering","Dimensionality Reduction","Model Tuning","Ensemble Methods","Neural Networks Basics","Capstone ML Project"],
+    "deep-learning": ["Neural Network Math","PyTorch/TensorFlow","Deep Neural Networks","Convolutional Neural Networks","Recurrent Neural Networks","Natural Language Processing","Computer Vision","Generative Models","Model Deployment","Capstone DL Project"],
+    "power-bi": ["Power BI Basics","Data Connections","Data Transformation (Power Query)","Data Modeling","DAX Formulas","Visualizations","Dashboards & Reports","Publishing","Refreshing Data","Capstone Power BI Dashboard"]
   };
 
   const ROADMAP_DETAILS = {
@@ -381,8 +401,6 @@ const RP = (() => {
         {q: "Is this theoretical or practical?", a: "It bridges theory with practical industrial applications and design principles."}
       ]
     }
-=======
->>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 
   const CATEGORY_ICON = {
@@ -529,6 +547,59 @@ const RP = (() => {
     getRoadmaps(){ return ROADMAPS; },
     getRoadmap(id){ return ROADMAPS.find(r => r.id === id); },
     getTopics(id){ return TOPIC_SETS[id] || TOPIC_SETS.default; },
+    
+    // Asynchronously fetch deep JSON data or fallback to legacy format
+    async getRoadmapData(id) {
+        try {
+            const res = await fetch(`../data/roadmaps/${id}.json`);
+            if (res.ok) {
+                return await res.json();
+            }
+        } catch (e) {
+            console.warn("Failed to fetch JSON, using legacy fallback for", id);
+        }
+        
+        // Legacy fallback
+        const meta = api.getRoadmap(id) || ROADMAP_DETAILS[id];
+        const topics = api.getTopics(id);
+        const rdDetails = ROADMAP_DETAILS[id] || {};
+        const rdMeta = api.getRoadmap(id) || {};
+        
+        if (!rdMeta.id && !topics) return null;
+
+        return {
+            id,
+            metadata: {
+                title: rdMeta.name || "Roadmap",
+                description: rdMeta.desc || "",
+                difficulty: rdMeta.difficulty || "Beginner",
+                duration: rdMeta.duration || "4 Weeks",
+                certificate: true,
+                projectsCount: 0,
+                modulesCount: topics.length,
+                lessonsCount: topics.length,
+                lastUpdated: "July 2026",
+                learningOutcomes: rdDetails.learningOutcomes || [],
+                skills: rdDetails.skills || [],
+                careers: rdDetails.careers || [],
+                rating: rdMeta.rating || 4.5,
+                students: rdMeta.students || 1000,
+                price: rdMeta.price || 0,
+                faqs: rdDetails.faqs || [],
+                reviews: rdDetails.reviews || []
+            },
+            modules: topics.map((t, i) => ({
+                id: `m${i}`,
+                title: t,
+                estimatedTime: "2 hours",
+                lessons: [ { id: `m${i}-l1`, title: t } ],
+                resources: [],
+                quiz: null
+            })),
+            checkpoints: [],
+            projects: []
+        };
+    },
 
     // ---- Purchases / enrolment ----
     isUnlocked(id){
@@ -564,14 +635,28 @@ const RP = (() => {
 
     // ---- Progress ----
     getProgress(id){
-      const topics = api.getTopics(id);
+      // Support legacy progress arrays or new object-based logic
       const done = state.progress[id] || {};
-      const doneCount = Object.values(done).filter(Boolean).length;
+      let doneCount = 0;
+      let total = 0;
+      
+      // Calculate done count based on object keys (new nested system) or array length (legacy)
+      if (Array.isArray(done)) {
+          doneCount = done.filter(Boolean).length;
+          total = done.length;
+      } else {
+          doneCount = Object.values(done).filter(Boolean).length;
+          // To get accurate total synchronously without fetching, we estimate or rely on roadmap metadata.
+          // For accuracy in dashboard, we should try to extract lessonsCount from ROADMAPS if it exists.
+          const roadmap = api.getRoadmap(id);
+          total = roadmap && roadmap.lessonsCount ? roadmap.lessonsCount : api.getTopics(id).length;
+      }
+      
       return {
         done,
         doneCount,
-        total: topics.length,
-        pct: topics.length ? Math.round((doneCount / topics.length) * 100) : 0,
+        total: total,
+        pct: total ? Math.round((doneCount / total) * 100) : 0,
       };
     },
     setTopicDone(id, topicIndex, isDone){
@@ -899,7 +984,6 @@ const RP = (() => {
     // ---- Utility ----
     relativeTime,
     getTotalTopicsDone,
-<<<<<<< HEAD
 
     // ---- Roadmap Details V2 ----
     getRoadmapDetails(id){ return ROADMAP_DETAILS[id] || ROADMAP_DETAILS['frontend-dev']; },
@@ -908,8 +992,6 @@ const RP = (() => {
       if(!r) return null;
       return { ...r, ...(ROADMAP_DETAILS[id] || {}) };
     },
-=======
->>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 
   /* ------------------------------------------------------------------
@@ -1229,10 +1311,6 @@ const RP = (() => {
 
   return {
     api, showToast, showXPToast, showConfetti, animateCounter, progressRingSVG,
-<<<<<<< HEAD
     initFAQ, initReveal, iconPath, roadmapCardHTML, resolvePath, ROADMAPS, ROADMAP_DETAILS
-=======
-    initFAQ, initReveal, iconPath, roadmapCardHTML, resolvePath, ROADMAPS
->>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
   };
 })();

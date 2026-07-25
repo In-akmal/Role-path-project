@@ -1,0 +1,423 @@
+{
+  "id": "python-django",
+  "metadata": {
+    "title": "Python & Django",
+    "description": "Robust web applications with Python.",
+    "difficulty": "Intermediate",
+    "duration": "8 Weeks",
+    "category": "Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Python Refresher & Django Setup",
+      "estimatedTime": "6 hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "m1-l1",
+          "title": "Python OOP Review",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m1-l2",
+          "title": "Virtual Environments & Pip",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l1"
+        },
+        {
+          "id": "m1-l3",
+          "title": "Installing Django",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l2"
+        },
+        {
+          "id": "m1-l4",
+          "title": "Creating a Django Project",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l3"
+        },
+        {
+          "id": "m1-l5",
+          "title": "Understanding Django Architecture (MVT)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 5,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m2",
+      "title": "Models & Databases",
+      "estimatedTime": "8 hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "m2-l1",
+          "title": "Database Setup (SQLite & PostgreSQL)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m2-l2",
+          "title": "Defining Models",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l1"
+        },
+        {
+          "id": "m2-l3",
+          "title": "Migrations",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l2"
+        },
+        {
+          "id": "m2-l4",
+          "title": "Django ORM Queries",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l3"
+        },
+        {
+          "id": "m2-l5",
+          "title": "Model Relationships (Foreign Key, M2M)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 8,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m3",
+      "title": "Views, URLs, and Templates",
+      "estimatedTime": "10 hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "m3-l1",
+          "title": "URL Dispatcher",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m3-l2",
+          "title": "Function-Based Views",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l1"
+        },
+        {
+          "id": "m3-l3",
+          "title": "Class-Based Views",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l2"
+        },
+        {
+          "id": "m3-l4",
+          "title": "Django Template Language (DTL)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l3"
+        },
+        {
+          "id": "m3-l5",
+          "title": "Template Inheritance",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m4",
+      "title": "Forms & Authentication",
+      "estimatedTime": "10 hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "m4-l1",
+          "title": "Django Forms",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m4-l2",
+          "title": "ModelForms",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l1"
+        },
+        {
+          "id": "m4-l3",
+          "title": "Form Validation",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l2"
+        },
+        {
+          "id": "m4-l4",
+          "title": "User Authentication System",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l3"
+        },
+        {
+          "id": "m4-l5",
+          "title": "Login, Logout, and Password Reset",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m5",
+      "title": "Django REST Framework (DRF)",
+      "estimatedTime": "12 hours",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "m5-l1",
+          "title": "Intro to REST APIs",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m5-l2",
+          "title": "DRF Serializers",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l1"
+        },
+        {
+          "id": "m5-l3",
+          "title": "API Views and ViewSets",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l2"
+        },
+        {
+          "id": "m5-l4",
+          "title": "Authentication (JWT & Token)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l3"
+        },
+        {
+          "id": "m5-l5",
+          "title": "Permissions & Pagination",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Django Fundamentals",
+      "requiredLessons": [
+        "m2-l5"
+      ],
+      "reward": "Django Developer Badge"
+    },
+    {
+      "title": "API Master",
+      "requiredLessons": [
+        "m5-l5"
+      ],
+      "reward": "API Master Badge"
+    }
+  ],
+  "finalProject": null
+}

@@ -1,0 +1,573 @@
+{
+  "id": "java-react",
+  "metadata": {
+    "title": "Java Full Stack Developer",
+    "description": "Master frontend, backend, databases, REST APIs, Spring Boot, deployment, and modern development workflows.",
+    "difficulty": "Advanced",
+    "duration": "6 Months",
+    "category": "Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Java Foundations & OOP",
+      "estimatedTime": "24 hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "m1-l1",
+          "title": "Java Environment Setup",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m1-l2",
+          "title": "Variables, Types, and Operators",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l1"
+        },
+        {
+          "id": "m1-l3",
+          "title": "Control Flow (If, Switch, Loops)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l2"
+        },
+        {
+          "id": "m1-l4",
+          "title": "Arrays and Strings",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l3"
+        },
+        {
+          "id": "m1-l5",
+          "title": "Classes and Objects",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l4"
+        },
+        {
+          "id": "m1-l6",
+          "title": "Inheritance and Polymorphism",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l5"
+        },
+        {
+          "id": "m1-l7",
+          "title": "Abstraction and Encapsulation",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l6"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m2",
+      "title": "Advanced Java & Data Structures",
+      "estimatedTime": "20 hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "m2-l1",
+          "title": "Exception Handling",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m2-l2",
+          "title": "Java Collections Framework (List, Set, Map)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l1"
+        },
+        {
+          "id": "m2-l3",
+          "title": "Generics",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l2"
+        },
+        {
+          "id": "m2-l4",
+          "title": "Multithreading & Concurrency",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l3"
+        },
+        {
+          "id": "m2-l5",
+          "title": "Java 8 Streams and Lambdas",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m3",
+      "title": "Spring Boot Backend",
+      "estimatedTime": "40 hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "m3-l1",
+          "title": "Intro to Spring and Dependency Injection",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m3-l2",
+          "title": "Spring Boot Setup & Annotations",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l1"
+        },
+        {
+          "id": "m3-l3",
+          "title": "Spring MVC and REST Controllers",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l2"
+        },
+        {
+          "id": "m3-l4",
+          "title": "Spring Data JPA & Hibernate",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l3"
+        },
+        {
+          "id": "m3-l5",
+          "title": "MySQL Database Integration",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l4"
+        },
+        {
+          "id": "m3-l6",
+          "title": "Exception Handling in Spring",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 12,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m4",
+      "title": "Security & Testing",
+      "estimatedTime": "20 hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "m4-l1",
+          "title": "Spring Security Basics",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m4-l2",
+          "title": "Authentication vs Authorization",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l1"
+        },
+        {
+          "id": "m4-l3",
+          "title": "JWT Token Implementation",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l2"
+        },
+        {
+          "id": "m4-l4",
+          "title": "Unit Testing with JUnit and Mockito",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l3"
+        },
+        {
+          "id": "m4-l5",
+          "title": "Integration Testing",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m5",
+      "title": "React Frontend",
+      "estimatedTime": "40 hours",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "m5-l1",
+          "title": "React Fundamentals & JSX",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m5-l2",
+          "title": "Components and Props",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l1"
+        },
+        {
+          "id": "m5-l3",
+          "title": "State and Hooks (useState, useEffect)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l2"
+        },
+        {
+          "id": "m5-l4",
+          "title": "React Router for Navigation",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l3"
+        },
+        {
+          "id": "m5-l5",
+          "title": "Context API for State Management",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l4"
+        },
+        {
+          "id": "m5-l6",
+          "title": "Connecting to APIs using Fetch/Axios",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l5"
+        },
+        {
+          "id": "m5-l7",
+          "title": "Handling CORS and Auth Tokens",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m5-l6"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m6",
+      "title": "Deployment & DevOps Basics",
+      "estimatedTime": "15 hours",
+      "order": 6,
+      "lessons": [
+        {
+          "id": "m6-l1",
+          "title": "Dockerizing a Spring Boot App",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m6-l2",
+          "title": "Dockerizing a React App",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m6-l1"
+        },
+        {
+          "id": "m6-l3",
+          "title": "Docker Compose",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m6-l2"
+        },
+        {
+          "id": "m6-l4",
+          "title": "Deploying Backend to AWS/Render",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m6-l3"
+        },
+        {
+          "id": "m6-l5",
+          "title": "Deploying Frontend to Vercel/Netlify",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m6-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 5,
+        "passingScore": 80
+      },
+      "project": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Java Fundamentals",
+      "requiredLessons": [
+        "m2-l5"
+      ],
+      "reward": "Java Duke Badge"
+    },
+    {
+      "title": "Backend Master",
+      "requiredLessons": [
+        "m4-l5"
+      ],
+      "reward": "Spring Boot Badge"
+    },
+    {
+      "title": "Full Stack Ready",
+      "requiredLessons": [
+        "m6-l5"
+      ],
+      "reward": "Full Stack Badge"
+    }
+  ],
+  "finalProject": null
+}

@@ -1,0 +1,179 @@
+{
+  "id": "java-fullstack",
+  "metadata": {
+    "title": "Java Full Stack Developer",
+    "description": "Master frontend, backend, databases, REST APIs, Spring Boot, deployment, and modern development workflows.",
+    "difficulty": "Advanced",
+    "duration": "6 Months",
+    "category": "Full Stack Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Java Foundations & OOP",
+      "estimatedTime": "24 hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "m1-l1",
+          "title": "Java Environment Setup",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Oracle Java SE Downloads",
+              "url": "https://www.oracle.com/java/technologies/downloads/"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Install JDK and set JAVA_HOME environment variable.",
+            "challenge": "Verify installation by running `java -version` in terminal."
+          },
+          "quiz": {
+            "available": false
+          },
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m1-l2",
+          "title": "Variables, Types, and Operators",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "1 hour",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Java Data Types",
+              "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Create 10 variables of different primitive types and print them.",
+            "challenge": "Temperature Converter (Celsius to Fahrenheit)"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Simple Calculator",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m1-l1"
+        },
+        {
+          "id": "m1-l3",
+          "title": "Control Flow (If, Switch, Loops)",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "2 hours",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Article",
+              "title": "Control Flow in Java",
+              "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Write a program that prints numbers from 1 to 100 using a for loop.",
+            "challenge": "FizzBuzz"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": null,
+          "prerequisite": "m1-l2"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Console Banking App",
+        "difficulty": "Easy"
+      }
+    },
+    {
+      "id": "m2",
+      "title": "Advanced Java & Data Structures",
+      "estimatedTime": "20 hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "m2-l1",
+          "title": "Exception Handling",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "2 hours",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Catching and Handling Exceptions",
+              "url": "https://docs.oracle.com/javase/tutorial/essential/exceptions/"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Write a try-catch block for a division by zero scenario.",
+            "challenge": "Create a custom exception class."
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": null,
+          "prerequisite": null
+        }
+      ],
+      "quiz": {
+        "questions": 12,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Employee Database System",
+        "difficulty": "Medium"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Java Fundamentals",
+      "requiredLessons": [
+        "m1-l3"
+      ],
+      "reward": "Java Duke Badge",
+      "skillsMastered": [
+        "Syntax",
+        "Control Flow"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    }
+  ],
+  "finalProject": {
+    "title": "Student Management System",
+    "description": "Full stack application with Spring Boot REST API and React frontend.",
+    "skills": [
+      "Spring Boot",
+      "React",
+      "PostgreSQL",
+      "Docker",
+      "JWT"
+    ],
+    "portfolioReady": true
+  }
+}

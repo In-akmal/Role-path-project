@@ -24,7 +24,6 @@
       <a href="index.html" data-nav="index.html" class="active">Home</a>
       <a href="pages/roadmaps.html" data-nav="roadmaps.html">Roadmaps</a>
       <a href="pages/dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
-      <a href="pages/my-roadmaps.html" data-nav="my-roadmaps.html" data-auth-only>My Roadmaps</a>
       <a href="pages/profile.html" data-nav="profile.html" data-auth-only>Profile</a>
       <a href="pages/login.html" class="mobile-only-cta" data-guest-only>Login</a>
       <a href="pages/register.html" class="mobile-only-cta" data-guest-only>Register</a>
@@ -96,44 +95,27 @@
   </div>
 </section>
 
-<!-- ============================= FEATURED ROADMAPS ============================= -->
-<section class="section" id="featured">
+<!-- ============================= CAREER CATEGORIES ============================= -->
+<section class="section" id="categories">
   <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Featured</span>
-      <h2>Popular roadmaps students start with</h2>
-      <p>Hand-picked paths across the categories students ask about most.</p>
+    <div class="section-head reveal in">
+      <span class="eyebrow" style="background: rgba(37,99,235,0.1); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px; display: inline-block;">CAREER PATHS</span>
+      <h2 style="font-size:clamp(28px,4vw,38px); margin-bottom: 8px;">Find your roadmap</h2>
+      <p class="muted">Browse roadmaps by category and start learning in the right order.</p>
     </div>
-    <div class="roadmap-grid stagger-in" id="featuredGrid"></div>
+
+    <form class="search-bar reveal in" style="margin: 0 0 32px; max-width: 600px;" id="catSearchForm" action="pages/roadmaps.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" name="q" id="catSearchInput" placeholder="Search Java, Python, Frontend, AI...">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+
+    <div class="roadmap-grid stagger-in" id="categoryGrid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+      <!-- Injected via JS -->
+    </div>
   </div>
 </section>
 
-<!-- ============================= FREE ROADMAPS ============================= -->
-<section class="section section-tight" style="background:var(--bg-alt)">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Start free</span>
-      <h2>Free beginner roadmaps</h2>
-      <p>No payment, no signup friction — start learning the basics right now.</p>
-    </div>
-    <div class="roadmap-grid stagger-in" id="freeGrid"></div>
-  </div>
-</section>
-
-<!-- ============================= PREMIUM ROADMAPS ============================= -->
-<section class="section" id="premium">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Go all in — ₹29</span>
-      <h2>Premium career roadmaps</h2>
-      <p>Complete, job-focused learning paths for one flat price. No subscriptions.</p>
-    </div>
-    <div class="roadmap-grid stagger-in" id="premiumGrid"></div>
-    <div class="text-center mt-48">
-      <a href="pages/roadmaps.html" class="btn btn-secondary">View All 19 Roadmaps</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============================= HOW IT WORKS ============================= -->
 <section class="section section-tight" style="background:var(--bg-alt)">
@@ -332,14 +314,35 @@
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=5"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const all = RP.api.getRoadmaps();
-    const featuredIds = ["frontend-dev","ai-engineer","data-scientist","cloud-engineer","cyber-security","java-fullstack"];
-    document.getElementById("featuredGrid").innerHTML = featuredIds.map(id => RP.roadmapCardHTML(RP.api.getRoadmap(id))).join("");
-    document.getElementById("freeGrid").innerHTML = all.filter(r => r.price === 0).map(r => RP.roadmapCardHTML(r)).join("");
-    document.getElementById("premiumGrid").innerHTML = all.filter(r => r.price > 0).slice(0,6).map(r => RP.roadmapCardHTML(r)).join("");
+    
+    const categoriesInfo = [
+      { name: "Free Learning", desc: "Build your programming foundation.", icon: "📚", color: "#22c55e" },
+      { name: "Web Development", desc: "Learn to build complete websites from scratch.", icon: "🌐", color: "#3b82f6" },
+      { name: "Frontend Development", desc: "Craft modern, interactive user interfaces.", icon: "🎨", color: "#8b5cf6" },
+      { name: "Backend Development", desc: "Build powerful APIs and server-side logic.", icon: "⚙️", color: "#f59e0b" },
+      { name: "Full Stack Development", desc: "Master both frontend and backend together.", icon: "💻", color: "#3b82f6" },
+      { name: "Data", desc: "Analyze, engineer and model data at scale.", icon: "📊", color: "#ec4899" }
+    ];
+
+    const categoryGrid = document.getElementById("categoryGrid");
+    if (categoryGrid) {
+      categoryGrid.innerHTML = categoriesInfo.map(cat => {
+        const roadmapsInCat = all.filter(r => r.category === cat.name).length;
+        return `
+          <div class="glass-card" style="display: flex; flex-direction: column; align-items: flex-start; padding: 32px; border-radius: 16px; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; height: 100%; border: 1px solid var(--border-color);" onclick="window.location.href='pages/roadmaps.html?category=${encodeURIComponent(cat.name)}'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div style="font-size: 32px; margin-bottom: 24px; background: rgba(0,0,0,0.03); width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 16px; flex-shrink: 0;">${cat.icon}</div>
+            <h3 style="font-size: 20px; margin-bottom: 12px; font-weight: 700; width: 100%;">${cat.name}</h3>
+            <p class="muted" style="margin-bottom: 24px; flex-grow: 1; line-height: 1.5; font-size: 15px; width: 100%;">${cat.desc}</p>
+            <div style="font-weight: 700; font-size: 13px; margin-bottom: 16px; color: ${cat.color};">${roadmapsInCat} Roadmap${roadmapsInCat !== 1 ? 's' : ''}</div>
+            <button style="background: ${cat.color}15; color: ${cat.color}; border: none; padding: 10px 20px; font-weight: 600; border-radius: 8px; font-size: 14px; cursor: pointer;">Explore &rarr;</button>
+          </div>
+        `;
+      }).join("");
+    }
     RP.initReveal();
 
     document.getElementById("heroSearchForm").addEventListener("submit", (e) => {

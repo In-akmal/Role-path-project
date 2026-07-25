@@ -1,0 +1,346 @@
+{
+  "id": "cpp-basics",
+  "metadata": {
+    "title": "C++ Basics",
+    "description": "Object-oriented programming and STL fundamentals.",
+    "difficulty": "Beginner",
+    "duration": "4 Weeks",
+    "category": "Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Introduction & Syntax",
+      "estimatedTime": "4 hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "m1-l1",
+          "title": "Introduction to C++",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m1-l2",
+          "title": "Development Environment Setup",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l1"
+        },
+        {
+          "id": "m1-l3",
+          "title": "First C++ Program (Hello World)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l2"
+        },
+        {
+          "id": "m1-l4",
+          "title": "Variables and Data Types",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l3"
+        },
+        {
+          "id": "m1-l5",
+          "title": "Basic Operators",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m1-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 5,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m2",
+      "title": "Control Flow & Functions",
+      "estimatedTime": "6 hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "m2-l1",
+          "title": "If/Else Conditions",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m2-l2",
+          "title": "Switch Statements",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l1"
+        },
+        {
+          "id": "m2-l3",
+          "title": "For and While Loops",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l2"
+        },
+        {
+          "id": "m2-l4",
+          "title": "Function Declaration and Definition",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l3"
+        },
+        {
+          "id": "m2-l5",
+          "title": "Function Parameters and Return Values",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m2-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 5,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m3",
+      "title": "Object-Oriented Programming",
+      "estimatedTime": "8 hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "m3-l1",
+          "title": "Classes and Objects",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m3-l2",
+          "title": "Constructors and Destructors",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l1"
+        },
+        {
+          "id": "m3-l3",
+          "title": "Encapsulation and Access Modifiers",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l2"
+        },
+        {
+          "id": "m3-l4",
+          "title": "Inheritance",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l3"
+        },
+        {
+          "id": "m3-l5",
+          "title": "Polymorphism and Virtual Functions",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m3-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 8,
+        "passingScore": 80
+      },
+      "project": null
+    },
+    {
+      "id": "m4",
+      "title": "Advanced Topics & STL",
+      "estimatedTime": "6 hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "m4-l1",
+          "title": "Pointers and References",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": null
+        },
+        {
+          "id": "m4-l2",
+          "title": "Dynamic Memory Allocation (new/delete)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l1"
+        },
+        {
+          "id": "m4-l3",
+          "title": "File I/O",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l2"
+        },
+        {
+          "id": "m4-l4",
+          "title": "Standard Template Library (Vectors, Maps)",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l3"
+        },
+        {
+          "id": "m4-l5",
+          "title": "Exception Handling",
+          "description": "",
+          "difficulty": "Normal",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [],
+          "exercise": null,
+          "quiz": null,
+          "project": null,
+          "prerequisite": "m4-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 8,
+        "passingScore": 80
+      },
+      "project": null
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "C++ Fundamentals",
+      "requiredLessons": [
+        "m1-l5",
+        "m2-l5"
+      ],
+      "reward": "Syntax Badge"
+    },
+    {
+      "title": "OOP Mastery",
+      "requiredLessons": [
+        "m3-l5"
+      ],
+      "reward": "OOP Master Badge"
+    }
+  ],
+  "finalProject": null
+}

@@ -19,7 +19,6 @@
       <a href="../index.html" data-nav="index.html">Home</a>
       <a href="roadmaps.html" data-nav="roadmaps.html" class="active">Roadmaps</a>
       <a href="dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
-      <a href="my-roadmaps.html" data-nav="my-roadmaps.html" data-auth-only>My Roadmaps</a>
       <a href="profile.html" data-nav="profile.html" data-auth-only>Profile</a>
       <a href="login.html" class="mobile-only-cta" data-guest-only>Login</a>
       <a href="register.html" class="mobile-only-cta" data-guest-only>Register</a>
@@ -76,7 +75,7 @@
   </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/script.js?v=5"></script>
 <script>
   const all = RP.api.getRoadmaps();
   const categories = ["All", ...new Set(all.map(r => r.category))];
@@ -113,11 +112,7 @@
     setTimeout(() => {
       grid.innerHTML = results.map((r, i) => {
         let html = RP.roadmapCardHTML(r, { pagesRelative: true });
-<<<<<<< HEAD
         return html.replace('class="roadmap-card-v2 reveal"', `class="roadmap-card-v2 animate-in"' style="animation-delay:${i*0.05}s"`);
-=======
-        return html.replace('class="roadmap-card reveal"', `class="roadmap-card animate-in" style="animation-delay:${i*0.05}s"`);
->>>>>>> bbbdc555bfc8fb217e27199091209978f3183aec
       }).join("");
       document.getElementById("emptyState").style.display = results.length ? "none" : "block";
       RP.initReveal();
@@ -152,9 +147,18 @@
     render();
   });
 
-  // Prefill from ?q= param (from hero search)
+  // Prefill from params
   const params = new URLSearchParams(window.location.search);
   if(params.get("q")) document.getElementById("searchInput").value = params.get("q");
+  if(params.get("category")) {
+    const catParam = params.get("category");
+    if(categories.includes(catParam)) {
+      activeCat = catParam;
+      filterRow.querySelectorAll(".filter-pill").forEach(b => {
+        b.classList.toggle("active", b.dataset.cat === catParam);
+      });
+    }
+  }
   render();
 </script>
 </body>

@@ -1,0 +1,1415 @@
+{
+  "id": "mean-stack",
+  "metadata": {
+    "title": "Mean Stack",
+    "description": "Comprehensive guide for mean-stack.",
+    "difficulty": "Intermediate",
+    "duration": "10 Weeks",
+    "category": "Software Development",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Module 1: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "m1-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m1-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m1-l1"
+        },
+        {
+          "id": "m1-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m1-l2"
+        },
+        {
+          "id": "m1-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m1-l3"
+        },
+        {
+          "id": "m1-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m1-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 1",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m2",
+      "title": "Module 2: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "m2-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m2-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m2-l1"
+        },
+        {
+          "id": "m2-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m2-l2"
+        },
+        {
+          "id": "m2-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m2-l3"
+        },
+        {
+          "id": "m2-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m2-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 2",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m3",
+      "title": "Module 3: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "m3-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m3-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m3-l1"
+        },
+        {
+          "id": "m3-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m3-l2"
+        },
+        {
+          "id": "m3-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m3-l3"
+        },
+        {
+          "id": "m3-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m3-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 3",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m4",
+      "title": "Module 4: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "m4-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m4-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m4-l1"
+        },
+        {
+          "id": "m4-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m4-l2"
+        },
+        {
+          "id": "m4-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m4-l3"
+        },
+        {
+          "id": "m4-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m4-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 4",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m5",
+      "title": "Module 5: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "m5-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m5-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m5-l1"
+        },
+        {
+          "id": "m5-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m5-l2"
+        },
+        {
+          "id": "m5-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m5-l3"
+        },
+        {
+          "id": "m5-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m5-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 5",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m6",
+      "title": "Module 6: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 6,
+      "lessons": [
+        {
+          "id": "m6-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m6-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m6-l1"
+        },
+        {
+          "id": "m6-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m6-l2"
+        },
+        {
+          "id": "m6-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m6-l3"
+        },
+        {
+          "id": "m6-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m6-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 6",
+        "difficulty": "Medium"
+      }
+    },
+    {
+      "id": "m7",
+      "title": "Module 7: mean-stack Core Concepts",
+      "estimatedTime": "12 Hours",
+      "order": 7,
+      "lessons": [
+        {
+          "id": "m7-l1",
+          "title": "Lesson 1: Deep dive into mean-stack concept 1",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 1",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 1",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 1",
+            "challenge": "Implement concept 1 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "m7-l2",
+          "title": "Lesson 2: Deep dive into mean-stack concept 2",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 2",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 2",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 2",
+            "challenge": "Implement concept 2 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m7-l1"
+        },
+        {
+          "id": "m7-l3",
+          "title": "Lesson 3: Deep dive into mean-stack concept 3",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 3",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 3",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 3",
+            "challenge": "Implement concept 3 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m7-l2"
+        },
+        {
+          "id": "m7-l4",
+          "title": "Lesson 4: Deep dive into mean-stack concept 4",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 4",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 4",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 4",
+            "challenge": "Implement concept 4 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m7-l3"
+        },
+        {
+          "id": "m7-l5",
+          "title": "Lesson 5: Deep dive into mean-stack concept 5",
+          "description": "",
+          "difficulty": "Medium",
+          "duration": "30 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Documentation",
+              "title": "Official Docs 5",
+              "url": "#"
+            },
+            {
+              "type": "Video",
+              "title": "Tutorial 5",
+              "url": "#"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Practice concept 5",
+            "challenge": "Implement concept 5 in a mini-app"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini mean-stack App 5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "m7-l4"
+        }
+      ],
+      "quiz": {
+        "questions": 10,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Project for Module 7",
+        "difficulty": "Medium"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Checkpoint 1",
+      "requiredLessons": [
+        "m1-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 2",
+      "requiredLessons": [
+        "m2-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 3",
+      "requiredLessons": [
+        "m3-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 4",
+      "requiredLessons": [
+        "m4-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 5",
+      "requiredLessons": [
+        "m5-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 6",
+      "requiredLessons": [
+        "m6-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    },
+    {
+      "title": "Checkpoint 7",
+      "requiredLessons": [
+        "m7-l5"
+      ],
+      "reward": "Gold Star",
+      "skillsMastered": [
+        "Skill A from mean-stack"
+      ],
+      "projectsCompleted": 1,
+      "xpEarned": 500
+    }
+  ],
+  "finalProject": {
+    "title": "mean-stack Master Capstone",
+    "description": "Complete a full real-world project using mean-stack.",
+    "skills": [
+      "mean-stack",
+      "Best Practices",
+      "Deployment",
+      "Architecture"
+    ],
+    "portfolioReady": true
+  }
+}

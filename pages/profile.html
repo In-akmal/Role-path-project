@@ -33,7 +33,6 @@
       <a href="../index.html" data-nav="index.html">Home</a>
       <a href="roadmaps.html" data-nav="roadmaps.html">Roadmaps</a>
       <a href="dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
-      <a href="my-roadmaps.html" data-nav="my-roadmaps.html" data-auth-only>My Roadmaps</a>
       <a href="profile.html" data-nav="profile.html" class="active" data-auth-only>Profile</a>
       <a href="login.html" class="mobile-only-cta" data-guest-only>Login</a>
       <a href="register.html" class="mobile-only-cta" data-guest-only>Register</a>
@@ -77,34 +76,37 @@
           </div>
           <h3 id="profileName">—</h3>
           <p class="muted" id="profileEmail" style="font-size:13px;">—</p>
-          <button class="btn btn-secondary btn-block mt-24" id="editBtn">Edit Profile</button>
-          <button class="btn btn-ghost btn-block mt-8" data-logout>Logout</button>
+          <button class="btn btn-ghost btn-block mt-16" data-logout>Logout</button>
         </div>
 
         <div>
-          <div class="card stagger-in">
-            <strong style="font-size:14px;">Gamification Stats</strong>
-            <div class="mt-16" style="display:grid; grid-template-columns:1fr 1fr; gap:12px;" id="profileStatsGrid">
-              <!-- JS will populate -->
-            </div>
+          <!-- Settings Card -->
+          <div class="card reveal in">
+            <h3 style="font-size:18px; font-weight:600; margin-bottom:24px; border-bottom:1px solid var(--border-color); padding-bottom:12px;">Account Settings</h3>
+            <form id="editForm" style="display:flex; flex-direction:column; gap:20px;">
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                <div class="form-group" style="margin:0;">
+                  <label for="editName" style="font-size:14px; font-weight:500; margin-bottom:8px; display:block; color:var(--text-muted);">Full Name</label>
+                  <input class="form-control" id="editName" style="background:var(--bg); border:1px solid var(--border-color); border-radius:8px; padding:12px;">
+                </div>
+                <div class="form-group" style="margin:0;">
+                  <label for="editEmail" style="font-size:14px; font-weight:500; margin-bottom:8px; display:block; color:var(--text-muted);">Email Address</label>
+                  <input class="form-control" id="editEmail" type="email" style="background:var(--bg); border:1px solid var(--border-color); border-radius:8px; padding:12px;">
+                </div>
+              </div>
+              <div style="display:flex; justify-content:flex-end;">
+                <button class="btn btn-primary" type="submit" style="padding:10px 24px; border-radius:8px;">Save Changes</button>
+              </div>
+            </form>
           </div>
 
-          <div class="card mt-16 animate-in" style="animation-delay:0.2s">
-            <strong style="font-size:14px;">Achievement Badges</strong>
-            <div class="badge-grid mt-16" id="profileBadgeGrid"></div>
+          <!-- Learning Summary -->
+          <div class="card reveal in mt-24">
+            <h3 style="font-size:18px; font-weight:600; margin-bottom:24px; border-bottom:1px solid var(--border-color); padding-bottom:12px;">Learning Summary</h3>
+            <div style="display:flex; flex-direction:column; gap:16px;" id="learningSummary">
+               <!-- JS will populate -->
+            </div>
           </div>
-
-          <form class="form-card mt-16" id="editForm" style="display:none;">
-            <div class="form-group">
-              <label for="editName">Full name</label>
-              <input class="form-control" id="editName">
-            </div>
-            <div class="form-group">
-              <label for="editEmail">Email</label>
-              <input class="form-control" id="editEmail" type="email">
-            </div>
-            <button class="btn btn-primary" type="submit">Save Changes</button>
-          </form>
         </div>
       </div>
     </div>
@@ -118,7 +120,7 @@
   </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/script.js?v=5"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     if(!RP.api.isLoggedIn()){
@@ -167,48 +169,29 @@
     document.getElementById("editName").value = user.name;
     document.getElementById("editEmail").value = user.email;
 
-    const levelInfo = RP.api.getLevelProgress();
-    const streak = RP.api.getStreak();
-    const xpInfo = RP.api.getXP();
+    const enrolled = RP.api.getEnrolled();
+    const completed = enrolled.filter(r => RP.api.getProgress(r.id).pct === 100);
+    const inProgress = enrolled.filter(r => RP.api.getProgress(r.id).pct > 0 && RP.api.getProgress(r.id).pct < 100);
     const totalTopics = RP.api.getTotalTopicsDone();
-    
-    document.getElementById("profileStatsGrid").innerHTML = `
-      <div class="stat-card-v2" style="padding:14px;">
-        <div class="stat-label">Level</div>
-        <div class="stat-value" style="font-size:22px;">${levelInfo.level}</div>
+
+    document.getElementById("learningSummary").innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; border-bottom:1px solid var(--border-color);">
+        <span style="color:var(--text-muted); font-size:15px;">Roadmaps Enrolled</span>
+        <strong style="font-size:16px;">${enrolled.length}</strong>
       </div>
-      <div class="stat-card-v2" style="padding:14px;">
-        <div class="stat-label">Total XP</div>
-        <div class="stat-value" style="font-size:22px;">${xpInfo.total}</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; border-bottom:1px solid var(--border-color);">
+        <span style="color:var(--text-muted); font-size:15px;">Roadmaps Completed</span>
+        <strong style="font-size:16px;">${completed.length}</strong>
       </div>
-      <div class="stat-card-v2" style="padding:14px;">
-        <div class="stat-label">Longest Streak</div>
-        <div class="stat-value" style="font-size:22px;">${streak.longest} <span style="font-size:12px; font-weight:normal; color:var(--text-muted)">Days</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; border-bottom:1px solid var(--border-color);">
+        <span style="color:var(--text-muted); font-size:15px;">Roadmaps In Progress</span>
+        <strong style="font-size:16px;">${inProgress.length}</strong>
       </div>
-      <div class="stat-card-v2" style="padding:14px;">
-        <div class="stat-label">Topics Done</div>
-        <div class="stat-value" style="font-size:22px;">${totalTopics}</div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span style="color:var(--text-muted); font-size:15px;">Total Topics Mastered</span>
+        <strong style="font-size:16px;">${totalTopics}</strong>
       </div>
     `;
-
-    const badgeGrid = document.getElementById("profileBadgeGrid");
-    const earnedBadges = RP.api.getBadges();
-    const allBadges = RP.api.getBadgeDefs();
-    
-    badgeGrid.innerHTML = allBadges.map((b, i) => {
-      const earned = earnedBadges.includes(b.id);
-      return `
-        <div class="badge-achievement ${!earned ? 'locked' : ''}">
-          <div class="badge-emoji">${b.emoji}</div>
-          <div class="badge-title">${b.title}</div>
-        </div>
-      `;
-    }).join("");
-
-    document.getElementById("editBtn").addEventListener("click", () => {
-      const form = document.getElementById("editForm");
-      form.style.display = form.style.display === "none" ? "block" : "none";
-    });
 
     document.getElementById("editForm").addEventListener("submit", (e) => {
       e.preventDefault();

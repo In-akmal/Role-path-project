@@ -1,0 +1,1810 @@
+{
+  "id": "data-science",
+  "metadata": {
+    "title": "Data Science Fundamentals to Advanced",
+    "description": "Comprehensive learning path for Data Science Fundamentals to Advanced",
+    "difficulty": "Advanced",
+    "duration": "32 Weeks",
+    "category": "Technology",
+    "prerequisites": [],
+    "skills": [],
+    "certificate": true,
+    "lastUpdated": "July 2026"
+  },
+  "modules": [
+    {
+      "id": "data-science-m1",
+      "title": "Module 1: Core Concepts 1",
+      "estimatedTime": "12 Hours",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "data-science-m1-l1",
+          "title": "Lesson 1 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-1",
+            "challenge": "Build a mini implementation of concept 1-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m1-l2",
+          "title": "Lesson 2 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-2",
+            "challenge": "Build a mini implementation of concept 1-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m1-l1"
+        },
+        {
+          "id": "data-science-m1-l3",
+          "title": "Lesson 3 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-3",
+            "challenge": "Build a mini implementation of concept 1-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m1-l2"
+        },
+        {
+          "id": "data-science-m1-l4",
+          "title": "Lesson 4 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-4",
+            "challenge": "Build a mini implementation of concept 1-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m1-l3"
+        },
+        {
+          "id": "data-science-m1-l5",
+          "title": "Lesson 5 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-5",
+            "challenge": "Build a mini implementation of concept 1-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m1-l4"
+        },
+        {
+          "id": "data-science-m1-l6",
+          "title": "Lesson 6 of Module 1 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 1-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 1-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 1-6",
+            "challenge": "Build a mini implementation of concept 1-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 1-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m1-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 1 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m2",
+      "title": "Module 2: Core Concepts 2",
+      "estimatedTime": "12 Hours",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "data-science-m2-l1",
+          "title": "Lesson 1 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-1",
+            "challenge": "Build a mini implementation of concept 2-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m2-l2",
+          "title": "Lesson 2 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-2",
+            "challenge": "Build a mini implementation of concept 2-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m2-l1"
+        },
+        {
+          "id": "data-science-m2-l3",
+          "title": "Lesson 3 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-3",
+            "challenge": "Build a mini implementation of concept 2-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m2-l2"
+        },
+        {
+          "id": "data-science-m2-l4",
+          "title": "Lesson 4 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-4",
+            "challenge": "Build a mini implementation of concept 2-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m2-l3"
+        },
+        {
+          "id": "data-science-m2-l5",
+          "title": "Lesson 5 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-5",
+            "challenge": "Build a mini implementation of concept 2-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m2-l4"
+        },
+        {
+          "id": "data-science-m2-l6",
+          "title": "Lesson 6 of Module 2 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 2-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 2-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 2-6",
+            "challenge": "Build a mini implementation of concept 2-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 2-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m2-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 2 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m3",
+      "title": "Module 3: Core Concepts 3",
+      "estimatedTime": "12 Hours",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "data-science-m3-l1",
+          "title": "Lesson 1 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-1",
+            "challenge": "Build a mini implementation of concept 3-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m3-l2",
+          "title": "Lesson 2 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-2",
+            "challenge": "Build a mini implementation of concept 3-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m3-l1"
+        },
+        {
+          "id": "data-science-m3-l3",
+          "title": "Lesson 3 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-3",
+            "challenge": "Build a mini implementation of concept 3-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m3-l2"
+        },
+        {
+          "id": "data-science-m3-l4",
+          "title": "Lesson 4 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-4",
+            "challenge": "Build a mini implementation of concept 3-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m3-l3"
+        },
+        {
+          "id": "data-science-m3-l5",
+          "title": "Lesson 5 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-5",
+            "challenge": "Build a mini implementation of concept 3-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m3-l4"
+        },
+        {
+          "id": "data-science-m3-l6",
+          "title": "Lesson 6 of Module 3 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 3-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 3-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 3-6",
+            "challenge": "Build a mini implementation of concept 3-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 3-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m3-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 3 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m4",
+      "title": "Module 4: Core Concepts 4",
+      "estimatedTime": "12 Hours",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "data-science-m4-l1",
+          "title": "Lesson 1 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-1",
+            "challenge": "Build a mini implementation of concept 4-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m4-l2",
+          "title": "Lesson 2 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-2",
+            "challenge": "Build a mini implementation of concept 4-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m4-l1"
+        },
+        {
+          "id": "data-science-m4-l3",
+          "title": "Lesson 3 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-3",
+            "challenge": "Build a mini implementation of concept 4-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m4-l2"
+        },
+        {
+          "id": "data-science-m4-l4",
+          "title": "Lesson 4 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-4",
+            "challenge": "Build a mini implementation of concept 4-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m4-l3"
+        },
+        {
+          "id": "data-science-m4-l5",
+          "title": "Lesson 5 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-5",
+            "challenge": "Build a mini implementation of concept 4-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m4-l4"
+        },
+        {
+          "id": "data-science-m4-l6",
+          "title": "Lesson 6 of Module 4 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 4-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 4-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 4-6",
+            "challenge": "Build a mini implementation of concept 4-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 4-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m4-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 4 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m5",
+      "title": "Module 5: Core Concepts 5",
+      "estimatedTime": "12 Hours",
+      "order": 5,
+      "lessons": [
+        {
+          "id": "data-science-m5-l1",
+          "title": "Lesson 1 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-1",
+            "challenge": "Build a mini implementation of concept 5-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m5-l2",
+          "title": "Lesson 2 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-2",
+            "challenge": "Build a mini implementation of concept 5-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m5-l1"
+        },
+        {
+          "id": "data-science-m5-l3",
+          "title": "Lesson 3 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-3",
+            "challenge": "Build a mini implementation of concept 5-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m5-l2"
+        },
+        {
+          "id": "data-science-m5-l4",
+          "title": "Lesson 4 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-4",
+            "challenge": "Build a mini implementation of concept 5-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m5-l3"
+        },
+        {
+          "id": "data-science-m5-l5",
+          "title": "Lesson 5 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-5",
+            "challenge": "Build a mini implementation of concept 5-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m5-l4"
+        },
+        {
+          "id": "data-science-m5-l6",
+          "title": "Lesson 6 of Module 5 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 5-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 5-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 5-6",
+            "challenge": "Build a mini implementation of concept 5-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 5-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m5-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 5 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m6",
+      "title": "Module 6: Core Concepts 6",
+      "estimatedTime": "12 Hours",
+      "order": 6,
+      "lessons": [
+        {
+          "id": "data-science-m6-l1",
+          "title": "Lesson 1 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-1",
+            "challenge": "Build a mini implementation of concept 6-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m6-l2",
+          "title": "Lesson 2 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-2",
+            "challenge": "Build a mini implementation of concept 6-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m6-l1"
+        },
+        {
+          "id": "data-science-m6-l3",
+          "title": "Lesson 3 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-3",
+            "challenge": "Build a mini implementation of concept 6-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m6-l2"
+        },
+        {
+          "id": "data-science-m6-l4",
+          "title": "Lesson 4 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-4",
+            "challenge": "Build a mini implementation of concept 6-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m6-l3"
+        },
+        {
+          "id": "data-science-m6-l5",
+          "title": "Lesson 5 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-5",
+            "challenge": "Build a mini implementation of concept 6-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m6-l4"
+        },
+        {
+          "id": "data-science-m6-l6",
+          "title": "Lesson 6 of Module 6 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 6-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 6-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 6-6",
+            "challenge": "Build a mini implementation of concept 6-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 6-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m6-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 6 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m7",
+      "title": "Module 7: Core Concepts 7",
+      "estimatedTime": "12 Hours",
+      "order": 7,
+      "lessons": [
+        {
+          "id": "data-science-m7-l1",
+          "title": "Lesson 1 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-1",
+            "challenge": "Build a mini implementation of concept 7-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m7-l2",
+          "title": "Lesson 2 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-2",
+            "challenge": "Build a mini implementation of concept 7-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m7-l1"
+        },
+        {
+          "id": "data-science-m7-l3",
+          "title": "Lesson 3 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-3",
+            "challenge": "Build a mini implementation of concept 7-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m7-l2"
+        },
+        {
+          "id": "data-science-m7-l4",
+          "title": "Lesson 4 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-4",
+            "challenge": "Build a mini implementation of concept 7-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m7-l3"
+        },
+        {
+          "id": "data-science-m7-l5",
+          "title": "Lesson 5 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-5",
+            "challenge": "Build a mini implementation of concept 7-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m7-l4"
+        },
+        {
+          "id": "data-science-m7-l6",
+          "title": "Lesson 6 of Module 7 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 7-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 7-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 7-6",
+            "challenge": "Build a mini implementation of concept 7-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 7-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m7-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 7 Capstone",
+        "difficulty": "Intermediate"
+      }
+    },
+    {
+      "id": "data-science-m8",
+      "title": "Module 8: Core Concepts 8",
+      "estimatedTime": "12 Hours",
+      "order": 8,
+      "lessons": [
+        {
+          "id": "data-science-m8-l1",
+          "title": "Lesson 1 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-1",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-1",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-1",
+            "challenge": "Build a mini implementation of concept 8-1"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-1",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": null
+        },
+        {
+          "id": "data-science-m8-l2",
+          "title": "Lesson 2 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Easy",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-2",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-2",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-2",
+            "challenge": "Build a mini implementation of concept 8-2"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-2",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m8-l1"
+        },
+        {
+          "id": "data-science-m8-l3",
+          "title": "Lesson 3 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-3",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-3",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-3",
+            "challenge": "Build a mini implementation of concept 8-3"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-3",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m8-l2"
+        },
+        {
+          "id": "data-science-m8-l4",
+          "title": "Lesson 4 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Intermediate",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-4",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-4",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-4",
+            "challenge": "Build a mini implementation of concept 8-4"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-4",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m8-l3"
+        },
+        {
+          "id": "data-science-m8-l5",
+          "title": "Lesson 5 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-5",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-5",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-5",
+            "challenge": "Build a mini implementation of concept 8-5"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-5",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m8-l4"
+        },
+        {
+          "id": "data-science-m8-l6",
+          "title": "Lesson 6 of Module 8 in Data Science Fundamentals to Advanced",
+          "description": "",
+          "difficulty": "Advanced",
+          "duration": "45 min",
+          "state": "locked",
+          "resources": [
+            {
+              "type": "Video",
+              "title": "Understanding Concept 8-6",
+              "url": "https://example.com/video"
+            },
+            {
+              "type": "Documentation",
+              "title": "Official Guide 8-6",
+              "url": "https://example.com/doc"
+            }
+          ],
+          "exercise": {
+            "title": "Exercise",
+            "description": "Complete the practical exercise for concept 8-6",
+            "challenge": "Build a mini implementation of concept 8-6"
+          },
+          "quiz": {
+            "available": true
+          },
+          "project": {
+            "title": "Mini Project 8-6",
+            "difficulty": "Normal",
+            "estimatedTime": "45 min"
+          },
+          "prerequisite": "data-science-m8-l5"
+        }
+      ],
+      "quiz": {
+        "questions": 15,
+        "passingScore": 80
+      },
+      "project": {
+        "title": "Module 8 Capstone",
+        "difficulty": "Intermediate"
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "title": "Mid-way Checkpoint",
+      "requiredLessons": [
+        "data-science-m4-l6"
+      ],
+      "reward": "Mid-Level Certificate",
+      "skillsMastered": [
+        "Foundational Skills"
+      ],
+      "projectsCompleted": 4,
+      "xpEarned": 1000
+    },
+    {
+      "title": "Advanced Checkpoint",
+      "requiredLessons": [
+        "data-science-m7-l6"
+      ],
+      "reward": "Advanced Certificate",
+      "skillsMastered": [
+        "Advanced Skills"
+      ],
+      "projectsCompleted": 7,
+      "xpEarned": 2000
+    }
+  ],
+  "finalProject": {
+    "title": "Data Science Fundamentals to Advanced Final Enterprise Project",
+    "description": "Build a fully functional, production-ready project for Data Science Fundamentals to Advanced",
+    "skills": [
+      "All Skills Learned"
+    ],
+    "portfolioReady": true
+  }
+}
