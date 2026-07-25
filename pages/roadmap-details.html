@@ -4,83 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roadmap Details — RolePath</title>
+<meta name="description" content="Structured learning path with lessons, resources, and exercises. Track your progress step by step.">
+<link rel="stylesheet" href="../css/design-tokens.css">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/roadmap-minimal.css">
 </head>
 <body>
 
+<!-- ============================== NAVBAR ============================== -->
 <header class="navbar">
   <div class="nav-inner">
     <a href="../index.html" class="brand">
-      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg></span>
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg></span>
       RolePath
     </a>
-    <nav class="nav-links" data-nav-links>
+    <nav class="nav-links" data-nav-links aria-label="Main navigation">
       <a href="../index.html" data-nav="index.html">Home</a>
       <a href="roadmaps.html" data-nav="roadmaps.html" class="active">Roadmaps</a>
       <a href="dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
       <a href="profile.html" data-nav="profile.html" data-auth-only>Profile</a>
+      <a href="login.html" class="mobile-only-cta" data-guest-only>Login</a>
+      <a href="register.html" class="mobile-only-cta" data-guest-only>Register</a>
+      <a href="#" data-logout data-auth-only class="mobile-only-cta">Logout</a>
     </nav>
     <div class="nav-actions">
-      <!-- Mute Toggle -->
-      <button class="theme-toggle" id="soundToggleBtn" aria-label="Toggle Sound" style="margin-right: 8px;">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+      <!-- Sound toggle — small inline button, not polluting the nav -->
+      <button class="theme-toggle" id="soundToggleBtn" aria-label="Toggle sound" title="Toggle sound effects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
       </button>
-
       <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
       </button>
       <a href="login.html" class="btn btn-secondary btn-sm" data-guest-only>Login</a>
-      <a href="register.html" class="btn btn-primary btn-sm" data-guest-only>Register</a>
-      <a href="dashboard.html" class="avatar-btn" data-auth-only style="display:none"><span data-user-initial>U</span></a>
+      <a href="register.html" class="btn btn-primary btn-sm" data-guest-only>Get Started</a>
+      <a href="dashboard.html" class="avatar-btn" data-auth-only style="display:none" aria-label="Open dashboard"><span data-user-initial>U</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<section class="catalogue-hero">
-  <div class="container" style="max-width: 1000px;">
-    <h1 id="rdName" class="hero-title">Loading roadmap…</h1>
-    <p class="hero-subtitle mt-8" id="rdDesc" style="max-width: 600px;"></p>
-  </div>
-</section>
+<main>
 
-<section style="padding-bottom:120px;">
-  <div class="container rd-layout" style="max-width: 1000px;">
-    
-    <div class="main-content">
-      <div id="topicList"></div>
+  <!-- Roadmap Header -->
+  <section class="catalogue-hero">
+    <div class="container" style="max-width:1040px;">
+      <a href="roadmaps.html" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; color:var(--color-text-muted); margin-bottom:16px; text-decoration:none; transition:color 0.15s;" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:14px;height:14px;" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        All Roadmaps
+      </a>
+      <h1 id="rdName" class="hero-title">Loading roadmap…</h1>
+      <p class="hero-subtitle" id="rdDesc" style="margin-top:8px;"></p>
     </div>
+  </section>
 
-    <aside class="sidebar-sticky" id="sidebarContainer">
-        <!-- Progress Sidebar renders here -->
-    </aside>
+  <!-- Content + Sidebar -->
+  <section style="padding-bottom:120px;">
+    <div class="container rd-layout" style="max-width:1040px;">
 
+      <div class="main-content" role="region" aria-label="Roadmap lessons">
+        <div id="topicList"></div>
+      </div>
+
+      <aside class="sidebar-minimal" id="sidebarContainer" aria-label="Progress sidebar">
+        <!-- Rendered by sidebar-renderer.js -->
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 RolePath. All rights reserved.</span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../index.html#faq">FAQ</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
   </div>
-</section>
+</footer>
 
-<!-- Load Sound Service globally -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Services & App -->
 <script src="../js/services/sound-service.js"></script>
-
-<!-- Load Main MVC App -->
 <script type="module" src="../js/app.js"></script>
-
 <script>
-  // Sound Toggle Init
-  const btn = document.getElementById('soundToggleBtn');
-  btn.addEventListener('click', (e) => {
-      const isEnabled = window.RPSound.toggle();
-      const svg = e.currentTarget.querySelector('svg');
-      if(isEnabled) {
-          svg.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>';
+  // Sound toggle
+  const soundBtn = document.getElementById('soundToggleBtn');
+  if (soundBtn) {
+    soundBtn.addEventListener('click', () => {
+      const isEnabled = window.RPSound && window.RPSound.toggle();
+      updateSoundIcon(isEnabled);
+    });
+
+    function updateSoundIcon(enabled) {
+      const svg = soundBtn.querySelector('svg');
+      if (!svg) return;
+      if (enabled) {
+        svg.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>';
+        soundBtn.setAttribute('aria-label', 'Mute sounds');
       } else {
-          svg.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+        svg.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+        soundBtn.setAttribute('aria-label', 'Enable sounds');
       }
-  });
-  
-  // Set initial icon state
-  if(localStorage.getItem('rp_sound_enabled') === 'false') {
-      btn.querySelector('svg').innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+    }
+
+    // Initial state
+    updateSoundIcon(localStorage.getItem('rp_sound_enabled') !== 'false');
   }
 </script>
 

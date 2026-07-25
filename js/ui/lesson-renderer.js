@@ -7,7 +7,7 @@ export const LessonRenderer = {
         const isChecked = status === 'done' ? 'checked' : '';
         const accent = status === 'current' ? '#2563EB' : '#22C55E';
         // Use an inline style to simulate the requested colors for the native checkbox
-        return `<input type="checkbox" class="mark-complete-checkbox" data-lesson="${lessonId}" ${isChecked} title="Mark as Complete" onclick="event.stopPropagation()" style="width: 16px; height: 16px; cursor: pointer; accent-color: ${accent}; margin: 0;">`;
+        return `<input type="checkbox" class="mark-complete-checkbox" data-lesson="${lessonId}" ${isChecked} title="Mark as Complete" onclick="event.stopPropagation(); if(window.RPSound) window.RPSound.play('success');" style="width: 16px; height: 16px; cursor: pointer; accent-color: ${accent}; margin: 0;">`;
     },
 
     render(lesson, status) {

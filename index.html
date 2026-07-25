@@ -3,24 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RolePath — Structured Career Roadmaps for Students</title>
-<meta name="description" content="Stop searching random tutorials. RolePath gives you a structured, step-by-step roadmap for any career — track your progress from beginner to job-ready.">
+<title>RolePath — Structured Career Roadmaps</title>
+<meta name="description" content="RolePath gives you a structured, step-by-step learning path for any tech career. Know exactly what to learn, and in what order.">
+<link rel="stylesheet" href="css/design-tokens.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-<!-- ============================= NAVBAR ============================= -->
+<!-- ============================== NAVBAR ============================== -->
 <header class="navbar">
   <div class="nav-inner">
     <a href="index.html" class="brand">
-      <span class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg>
       </span>
       RolePath
     </a>
 
-    <nav class="nav-links" data-nav-links>
+    <nav class="nav-links" data-nav-links aria-label="Main navigation">
       <a href="index.html" data-nav="index.html" class="active">Home</a>
       <a href="pages/roadmaps.html" data-nav="roadmaps.html">Roadmaps</a>
       <a href="pages/dashboard.html" data-nav="dashboard.html" data-auth-only>Dashboard</a>
@@ -32,152 +33,246 @@
 
     <div class="nav-actions">
       <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
       </button>
       <a href="pages/login.html" class="btn btn-secondary btn-sm" data-guest-only>Login</a>
-      <a href="pages/register.html" class="btn btn-primary btn-sm" data-guest-only>Register</a>
-      <a href="pages/dashboard.html" class="avatar-btn" data-auth-only style="display:none"><span data-user-initial>U</span></a>
-      <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span></span><span></span><span></span></button>
+      <a href="pages/register.html" class="btn btn-primary btn-sm" data-guest-only>Get Started</a>
+      <a href="pages/dashboard.html" class="avatar-btn" data-auth-only style="display:none" aria-label="Open dashboard"><span data-user-initial>U</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
-<!-- ============================= HERO ============================= -->
-<section class="hero">
-  <svg class="hero-bg-path" viewBox="0 0 1200 600" preserveAspectRatio="none">
-    <path d="M-50 500 C 200 500, 250 300, 500 320 S 800 150, 1000 180 S 1250 100 1300 60" stroke="#2563EB" stroke-width="2" fill="none" stroke-dasharray="6 10" opacity="0.35"/>
-  </svg>
-  <div class="container hero-inner">
+<main>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" style="padding: 80px 0 60px;">
+  <div class="container hero-inner" style="align-items: center;">
+
     <div class="hero-content">
-      <span class="eyebrow">For students choosing a career</span>
-      <h1>Stop guessing.<br>Follow a <span class="accent">clear path</span> to your career.</h1>
-      <p>Random YouTube videos and scattered tutorials waste your time. RolePath gives you one structured roadmap per career, checkpoint by checkpoint, so you always know what to learn next.</p>
-      <div class="hero-cta">
-        <a href="pages/roadmaps.html" class="btn btn-primary btn-lg">Explore Roadmaps</a>
-        <a href="pages/register.html" class="btn btn-secondary btn-lg">Create Free Account</a>
+      <span class="eyebrow" style="margin-bottom: 24px; display: inline-block;">STRUCTURED LEARNING PATHS</span>
+      <h1 style="font-size: clamp(36px, 5vw, 54px); line-height: 1.1; margin-bottom: 24px; letter-spacing: -0.02em;">Stop guessing.<br>Follow a clear path.</h1>
+      <p style="font-size: 18px; color: var(--color-text-secondary); max-width: 480px; margin-bottom: 32px; line-height: 1.6;">RolePath gives you structured roadmaps for every career. Topic by topic. Step by step. So you always know what to learn next.</p>
+      
+      <div class="hero-cta" style="display: flex; gap: 16px; margin-bottom: 40px; align-items: center;">
+        <a href="pages/roadmaps.html" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; gap: 8px;">Explore Roadmaps <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        <a href="pages/register.html" class="btn btn-lg" style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text); box-shadow: 0 1px 2px rgba(0,0,0,0.05);">Create Free Account</a>
       </div>
-      <div class="hero-search">
-        <form class="search-bar" role="search" id="heroSearchForm">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          <input type="text" id="heroSearchInput" placeholder="Search “Frontend Developer”, “Data Science”…" aria-label="Search roadmaps">
-          <button type="submit" class="btn btn-primary">Search</button>
-        </form>
-      </div>
-      <div class="hero-trust">
-        <span><strong>19</strong> career roadmaps</span>
-        <span><strong>11</strong> categories</span>
-        <span><strong>₹29</strong> flat premium price</span>
+      
+      <div class="hero-trust" style="display: flex; align-items: center; gap: 16px;">
+        <div class="avatars" style="display: flex;">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Learner" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--color-surface); margin-right: -8px;">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Learner" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--color-surface); margin-right: -8px;">
+          <img src="https://i.pravatar.cc/100?img=13" alt="Learner" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--color-surface);">
+        </div>
+        <span style="font-size: 13px; color: var(--color-text-secondary);">Join 50,000+ learners already building their future</span>
       </div>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-card-float glass-card" style="top:6%; left:4%; width:220px;">
-        <div class="flex items-center gap-8"><span class="difficulty-tag difficulty-beginner">Beginner</span></div>
-        <h4 style="font-size:14.5px;margin-top:10px;">Python Basics</h4>
-        <div class="progress-track mt-8"><div class="progress-fill" style="width:40%"></div></div>
+    <div class="hero-graphic" aria-hidden="true" style="position: relative; width: 100%; height: 400px; display: flex; justify-content: center; align-items: center;">
+      <!-- The floating 3D path -->
+      <svg width="400" height="300" viewBox="0 0 400 300" style="position: absolute; top: 50px; left: 0px;">
+        <defs>
+          <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#C7D2FE" />
+            <stop offset="50%" stop-color="#60A5FA" />
+            <stop offset="100%" stop-color="#2563EB" />
+          </linearGradient>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#2563EB" flood-opacity="0.15" />
+          </filter>
+        </defs>
+        <path d="M 40 40 C 150 20, 100 120, 200 130 C 350 140, 220 220, 320 250" stroke="rgba(37, 99, 235, 0.2)" stroke-width="12" fill="none" stroke-linecap="round" filter="url(#shadow)" />
+        <path d="M 40 40 C 150 20, 100 120, 200 130 C 350 140, 220 220, 320 250" stroke="url(#pathGradient)" stroke-width="6" fill="none" stroke-linecap="round" />
+      </svg>
+      
+      <!-- Base & Flag -->
+      <div style="position: absolute; bottom: 40px; right: 40px;">
+        <div style="width: 100px; height: 30px; background: var(--color-surface); border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.1); position: absolute; bottom: 0; left: -50px; border: 1px solid var(--color-border);"></div>
+        <div style="position: absolute; bottom: 15px; left: -5px; width: 6px; height: 40px; background: #2563EB; border-radius: 3px;"></div>
+        <svg viewBox="0 0 24 24" style="position: absolute; bottom: 35px; left: 0px; width: 24px; height: 24px; fill: #2563EB;"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>
       </div>
-      <div class="hero-card-float glass-card" style="top:38%; right:2%; width:210px; animation-delay:1.2s;">
-        <div class="flex items-center gap-8"><span class="difficulty-tag difficulty-intermediate">Intermediate</span></div>
-        <h4 style="font-size:14.5px;margin-top:10px;">Frontend Developer</h4>
-        <div class="progress-track mt-8"><div class="progress-fill" style="width:68%"></div></div>
+
+      <!-- Card 1 -->
+      <div class="h-card" style="position: absolute; top: 20px; left: 0; animation: float 6s ease-in-out infinite;">
+        <div style="color: #2563EB; font-weight: 700; font-size: 16px; margin-right: 12px;">01</div>
+        <div style="flex: 1;">
+          <div style="font-size: 12px; font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Learn the Basics</div>
+          <div style="width: 100%; height: 4px; background: var(--color-border); border-radius: 2px; margin-bottom: 4px;"></div>
+          <div style="width: 70%; height: 4px; background: var(--color-border); border-radius: 2px;"></div>
+        </div>
+        <div style="width: 20px; height: 20px; background: #2563EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 12px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" style="width:12px;height:12px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
       </div>
-      <div class="hero-card-float glass-card" style="bottom:6%; left:12%; width:230px; animation-delay:2.4s;">
-        <div class="flex items-center gap-12">
-          <div class="testimonial-avatar" style="width:34px;height:34px;font-size:12px;">RS</div>
-          <div>
-            <h4 style="font-size:13.5px;">Roadmap unlocked</h4>
-            <span class="muted" style="font-size:12px;">AI Engineer · ₹29</span>
-          </div>
+      
+      <!-- Card 2 -->
+      <div class="h-card" style="position: absolute; top: 120px; left: 120px; animation: float 6s ease-in-out infinite 1s;">
+        <div style="color: #8B5CF6; font-weight: 700; font-size: 16px; margin-right: 12px;">02</div>
+        <div style="flex: 1;">
+          <div style="font-size: 12px; font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Build Real Skills</div>
+          <div style="width: 100%; height: 4px; background: var(--color-border); border-radius: 2px; margin-bottom: 4px;"></div>
+          <div style="width: 70%; height: 4px; background: var(--color-border); border-radius: 2px;"></div>
+        </div>
+        <div style="margin-left: 12px; color: var(--color-text-muted);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="h-card" style="position: absolute; top: 220px; left: 30px; animation: float 6s ease-in-out infinite 2s;">
+        <div style="color: #10B981; font-weight: 700; font-size: 16px; margin-right: 12px;">03</div>
+        <div style="flex: 1;">
+          <div style="font-size: 12px; font-weight: 600; color: var(--color-text); margin-bottom: 4px;">Work on Projects</div>
+          <div style="width: 100%; height: 4px; background: var(--color-border); border-radius: 2px; margin-bottom: 4px;"></div>
+          <div style="width: 70%; height: 4px; background: var(--color-border); border-radius: 2px;"></div>
+        </div>
+        <div style="margin-left: 12px; color: var(--color-text-muted);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================== STATS BANNER ============================== -->
+<section style="border-bottom: 1px solid var(--color-border); padding: 32px 0;">
+  <div class="container">
+    <div class="stats-grid">
+      <!-- Stat 1 -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 48px; height: 48px; background: var(--color-primary-50); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+        </div>
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: var(--color-text);">41+</div>
+          <div style="font-size: 13px; color: var(--color-text-secondary);">Career Roadmaps</div>
+        </div>
+      </div>
+      <!-- Stat 2 -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 48px; height: 48px; background: var(--color-primary-50); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        </div>
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: var(--color-text);">11+</div>
+          <div style="font-size: 13px; color: var(--color-text-secondary);">Top Categories</div>
+        </div>
+      </div>
+      <!-- Stat 3 -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 48px; height: 48px; background: var(--color-primary-50); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        </div>
+        <div>
+          <div style="font-size: 20px; font-weight: 700; color: var(--color-text);">50K+</div>
+          <div style="font-size: 13px; color: var(--color-text-secondary);">Active Learners</div>
+        </div>
+      </div>
+      <!-- Stat 4 -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div style="width: 48px; height: 48px; background: var(--color-primary-50); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-primary);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <div>
+          <div style="font-size: 13px; color: var(--color-text-secondary);">Trusted by</div>
+          <div style="font-size: 14px; font-weight: 600; color: var(--color-text);">Learners Worldwide</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= CAREER CATEGORIES ============================= -->
+
+<!-- ============================== CATEGORIES ============================== -->
 <section class="section" id="categories">
   <div class="container">
-    <div class="section-head reveal in">
-      <span class="eyebrow" style="background: rgba(37,99,235,0.1); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 12px; margin-bottom: 12px; display: inline-block;">CAREER PATHS</span>
-      <h2 style="font-size:clamp(28px,4vw,38px); margin-bottom: 8px;">Find your roadmap</h2>
-      <p class="muted">Browse roadmaps by category and start learning in the right order.</p>
+    <div class="section-head reveal">
+      <span class="eyebrow">Career Paths</span>
+      <h2>Find your roadmap</h2>
+      <p>Browse by category and start learning in the right order.</p>
     </div>
-
-    <form class="search-bar reveal in" style="margin: 0 0 32px; max-width: 600px;" id="catSearchForm" action="pages/roadmaps.html">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input type="text" name="q" id="catSearchInput" placeholder="Search Java, Python, Frontend, AI...">
-      <button class="btn btn-primary" type="submit">Search</button>
+    <form class="search-bar reveal" style="margin: 0 0 32px;" id="catSearchForm" action="pages/roadmaps.html" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" name="q" id="catSearchInput" placeholder="Search Java, Python, Frontend, AI..." aria-label="Search roadmaps">
+      <button class="btn btn-primary btn-sm" type="submit">Search</button>
     </form>
-
-    <div class="roadmap-grid stagger-in" id="categoryGrid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+    <div class="roadmap-grid" id="categoryGrid">
       <!-- Injected via JS -->
     </div>
   </div>
 </section>
 
-
-<!-- ============================= HOW IT WORKS ============================= -->
-<section class="section section-tight" style="background:var(--bg-alt)">
+<!-- ============================== HOW IT WORKS ============================== -->
+<section class="section section-tight" style="background:var(--color-bg-alt)">
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">Simple by design</span>
       <h2>How RolePath works</h2>
     </div>
-    <div class="steps-row reveal stagger-in">
+    <div class="steps-row reveal">
       <div class="step-item">
         <div class="step-num">01</div>
         <h3>Pick a roadmap</h3>
-        <p>Browse 19 roadmaps across 11 categories and choose your career direction.</p>
+        <p>Browse 41 roadmaps across 11 categories and choose your career direction.</p>
       </div>
       <div class="step-item">
         <div class="step-num">02</div>
         <h3>Start free or unlock</h3>
-        <p>Begin instantly with a free beginner path, or unlock a full career roadmap for ₹29.</p>
+        <p>Begin instantly with a free beginner path, or unlock a full roadmap for ₹29.</p>
       </div>
       <div class="step-item">
         <div class="step-num">03</div>
-        <h3>Check off topics</h3>
-        <p>Mark each topic complete as you study — your progress bar updates automatically.</p>
+        <h3>Complete lessons</h3>
+        <p>Expand each lesson, study the resources, finish the exercise, mark it done.</p>
       </div>
       <div class="step-item">
         <div class="step-num">04</div>
-        <h3>Track from your dashboard</h3>
+        <h3>Track your progress</h3>
         <p>Pick up exactly where you left off, any time, from a single dashboard.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= BENEFITS ============================= -->
+<!-- ============================== BENEFITS ============================== -->
 <section class="section">
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">Why RolePath</span>
       <h2>Built to remove the guesswork</h2>
     </div>
-    <div class="benefits-grid reveal stagger-in">
+    <div class="benefits-grid reveal">
       <div class="benefit-card">
-        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
         <h3>One clear order</h3>
-        <p class="muted">No more deciding what to learn first — every roadmap is sequenced for you.</p>
+        <p>No more deciding what to learn first — every roadmap is sequenced for you.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>Track real progress</h3>
-        <p class="muted">Checkboxes and progress bars that actually reflect how far you've come.</p>
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Real progress tracking</h3>
+        <p>Checkboxes and progress bars that reflect exactly how far you've come.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
         <h3>Flat ₹29 pricing</h3>
-        <p class="muted">Every premium roadmap costs the same — no confusing tiers or subscriptions.</p>
+        <p>Every premium roadmap costs the same. No confusing tiers or subscriptions.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= TESTIMONIALS ============================= -->
-<section class="section section-tight" style="background:var(--bg-alt)">
+<!-- ============================== TESTIMONIALS ============================== -->
+<section class="section section-tight" style="background:var(--color-bg-alt)">
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">Student stories</span>
@@ -185,176 +280,164 @@
     </div>
     <div class="roadmap-grid reveal">
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"I kept switching between five different YouTube playlists before this. The Frontend Developer roadmap finally gave me one order to follow."</p>
+        <p class="quote">"I kept switching between five different YouTube playlists before this. The Frontend Developer roadmap finally gave me one clear order to follow."</p>
         <div class="testimonial-person">
-          <div class="testimonial-avatar">AN</div>
-          <div><strong>Ananya N.</strong><div class="role">2nd year, B.Tech CSE</div></div>
+          <div class="testimonial-avatar" aria-hidden="true">AN</div>
+          <div>
+            <div class="name">Ananya N.</div>
+            <div class="role">2nd year, B.Tech CSE</div>
+          </div>
         </div>
       </div>
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Unlocked AI Engineer for ₹29 and it genuinely covers what I needed — math, ML basics, and deployment, in that order."</p>
+        <p class="quote">"Unlocked AI Engineer for ₹29 and it genuinely covers everything — math, ML basics, and deployment, in the right order."</p>
         <div class="testimonial-person">
-          <div class="testimonial-avatar">RK</div>
-          <div><strong>Rahul K.</strong><div class="role">Final year, ECE</div></div>
+          <div class="testimonial-avatar" aria-hidden="true">RK</div>
+          <div>
+            <div class="name">Rahul K.</div>
+            <div class="role">Final year, ECE</div>
+          </div>
         </div>
       </div>
       <div class="testimonial-card">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"The progress bar keeps me honest. I can see exactly how much of Data Science I've actually finished."</p>
+        <p class="quote">"The progress bar keeps me honest. I can see exactly how much of Data Science I've actually finished vs. just watched."</p>
         <div class="testimonial-person">
-          <div class="testimonial-avatar">SP</div>
-          <div><strong>Sneha P.</strong><div class="role">3rd year, IT</div></div>
+          <div class="testimonial-avatar" aria-hidden="true">SP</div>
+          <div>
+            <div class="name">Sneha P.</div>
+            <div class="role">3rd year, IT</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= FAQ ============================= -->
-<section class="section">
+<!-- ============================== FAQ ============================== -->
+<section class="section" id="faq">
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow">FAQ</span>
       <h2>Common questions</h2>
     </div>
-    <div class="faq-list reveal" style="max-width:760px;margin:0 auto;">
+    <div class="faq-list reveal" style="max-width:720px; margin:0 auto;">
       <div class="faq-item open">
-        <button class="faq-question">Are the free roadmaps really free forever?<span class="plus">+</span></button>
-        <div class="faq-answer" style="max-height:200px"><p>Yes. Java Basics, Python Basics, HTML Basics, CSS Basics and C Programming Basics stay free with no hidden costs.</p></div>
+        <button class="faq-question" aria-expanded="true">
+          Are the free roadmaps really free forever?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Java Basics, Python Basics, HTML Basics, CSS Basics and C Programming Basics stay free with no hidden costs — ever.</p></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">What do I get for ₹29?<span class="plus">+</span></button>
-        <div class="faq-answer"><p>A complete career roadmap — every topic from fundamentals to job-ready, structured in order, with progress tracking.</p></div>
+        <button class="faq-question" aria-expanded="false">
+          What do I get for ₹29?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>A complete career roadmap — every topic from fundamentals to job-ready, structured in order, with resources, exercises, and progress tracking.</p></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Is there a subscription?<span class="plus">+</span></button>
-        <div class="faq-answer"><p>No. Every premium roadmap is a one-time ₹29 payment. Once unlocked, it's yours in your dashboard permanently.</p></div>
+        <button class="faq-question" aria-expanded="false">
+          Is there a subscription?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>No. Each premium roadmap is a one-time ₹29 payment. Once unlocked, it's yours permanently.</p></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-question">Can I switch roadmaps later?<span class="plus">+</span></button>
-        <div class="faq-answer"><p>Yes. You can start as many free roadmaps as you like and unlock any premium roadmap independently.</p></div>
+        <button class="faq-question" aria-expanded="false">
+          Can I switch roadmaps later?
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Start as many free roadmaps as you like and unlock any premium roadmap independently — each purchased separately.</p></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= CONTACT ============================= -->
-<section class="section section-tight" style="background:var(--bg-alt)" id="contact">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Get in touch</span>
-      <h2>We're happy to help</h2>
-      <p>Questions about a roadmap or a payment? Reach out any time.</p>
-    </div>
-    <div class="contact-wrap reveal">
-      <div>
-        <div class="contact-info-item">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg></div>
-          <div><strong>Email</strong><div class="muted">support@rolepath.in</div></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L9 9.9a16 16 0 0 0 5.1 5.1l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
-          <div><strong>Phone</strong><div class="muted">+91 90000 12345</div></div>
-        </div>
-        <div class="contact-info-item">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div><strong>Based in</strong><div class="muted">Hyderabad, India</div></div>
-        </div>
-      </div>
-      <form class="form-card" id="contactForm">
-        <div class="form-group"><label for="cName">Full name</label><input class="form-control" id="cName" required></div>
-        <div class="form-group"><label for="cEmail">Email</label><input type="email" class="form-control" id="cEmail" required></div>
-        <div class="form-group"><label for="cMsg">Message</label><textarea class="form-control" id="cMsg" rows="4" required></textarea></div>
-        <button class="btn btn-primary btn-block" type="submit">Send Message</button>
-      </form>
+<!-- ============================== CTA ============================== -->
+<section class="section section-tight" style="background:var(--color-bg-alt)">
+  <div class="container" style="text-align:center;">
+    <h2 style="font-size:clamp(24px,4vw,36px); margin-bottom:16px;">Ready to find your path?</h2>
+    <p style="font-size:16px; color:var(--color-text-secondary); margin-bottom:32px; max-width:480px; margin-left:auto; margin-right:auto;">Join thousands of students learning with structure, not chaos.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="pages/roadmaps.html" class="btn btn-primary btn-lg">Browse Roadmaps</a>
+      <a href="pages/register.html" class="btn btn-secondary btn-lg">Create Free Account</a>
     </div>
   </div>
 </section>
 
-<!-- ============================= FOOTER ============================= -->
+</main>
+
+<!-- ============================== FOOTER ============================== -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M5 8v3a4 4 0 0 0 4 4h6a4 4 0 0 1 4 3"/></svg></span>RolePath</a>
-        <p>Structured career roadmaps so students always know what to learn next.</p>
-        <div class="social-icons">
-          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7a4 4 0 0 0 1.8-2.2c-.8.5-1.6.8-2.6 1a4 4 0 0 0-6.9 3.6A11.4 11.4 0 0 1 3.7 4.9a4 4 0 0 0 1.3 5.4c-.7 0-1.3-.2-1.9-.5v.1a4 4 0 0 0 3.3 4 4 4 0 0 1-1.8.1 4 4 0 0 0 3.8 2.8A8 8 0 0 1 2 18.6a11.4 11.4 0 0 0 6.2 1.8c7.4 0 11.5-6.2 11.5-11.5v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.4H3.3V21H6.9V8.4zM5.1 3a2 2 0 1 0 0 4.1 2 2 0 0 0 0-4.1zM21 21v-7c0-3.4-1.8-5-4.2-5-1.9 0-2.8 1-3.3 1.8V8.4H10v12.7h3.5v-6.6c0-.9.2-1.9 1.7-1.9 1.4 0 1.5 1.3 1.5 1.9V21H21z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2 0 2 .2 2.4.4a4.8 4.8 0 0 1 2.8 2.8c.2.4.4 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 2-.4 2.4a4.8 4.8 0 0 1-2.8 2.8c-.4.2-1.2.4-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-2-.2-2.4-.4a4.8 4.8 0 0 1-2.8-2.8c-.2-.4-.4-1.2-.4-2.4C2 15.6 2 15.2 2 12s0-3.6.1-4.9c0-1.2.2-2 .4-2.4A4.8 4.8 0 0 1 5.3 2c.4-.2 1.2-.4 2.4-.4C8.9 2.2 9.3 2.2 12 2.2zm0 3a4.8 4.8 0 1 0 0 9.7 4.8 4.8 0 0 0 0-9.7zm0 7.9a3.1 3.1 0 1 1 0-6.3 3.1 3.1 0 0 1 0 6.3zm5-8.1a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="#">Careers</a>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 RolePath. All rights reserved.</span>
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="pages/roadmaps.html">Roadmaps</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Refund Policy</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 RolePath. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">FAQ</a>
-      </div>
+        <a href="#faq">FAQ</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
     </div>
   </div>
 </footer>
 
-<script src="js/script.js?v=5"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js?v=6"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const all = RP.api.getRoadmaps();
-    
     const categoriesInfo = [
-      { name: "Free Learning", desc: "Build your programming foundation.", icon: "📚", color: "#22c55e" },
-      { name: "Web Development", desc: "Learn to build complete websites from scratch.", icon: "🌐", color: "#3b82f6" },
-      { name: "Frontend Development", desc: "Craft modern, interactive user interfaces.", icon: "🎨", color: "#8b5cf6" },
-      { name: "Backend Development", desc: "Build powerful APIs and server-side logic.", icon: "⚙️", color: "#f59e0b" },
-      { name: "Full Stack Development", desc: "Master both frontend and backend together.", icon: "💻", color: "#3b82f6" },
-      { name: "Data", desc: "Analyze, engineer and model data at scale.", icon: "📊", color: "#ec4899" }
+      { name: "Free Learning",          desc: "Start learning with zero cost.", icon: "📚", color: "#22C55E" },
+      { name: "Web Development",        desc: "Build complete websites from scratch.", icon: "🌐", color: "#2563EB" },
+      { name: "Frontend Development",   desc: "Craft modern, interactive UIs.", icon: "🎨", color: "#8B5CF6" },
+      { name: "Backend Development",    desc: "Build APIs and server-side logic.", icon: "⚙️", color: "#F59E0B" },
+      { name: "Full Stack Development", desc: "Master both frontend and backend.", icon: "💻", color: "#2563EB" },
+      { name: "Data",                   desc: "Analyze, engineer and model data.", icon: "📊", color: "#EC4899" },
+      { name: "Cloud & DevOps",         desc: "AWS, Azure, Docker and CI/CD.", icon: "☁️", color: "#0EA5E9" },
+      { name: "Cyber Security",         desc: "Ethical hacking and defense.", icon: "🛡️", color: "#EF4444" },
+      { name: "Engineering",            desc: "Civil, Mechanical, and Electronics.", icon: "🏗️", color: "#64748B" }
     ];
 
     const categoryGrid = document.getElementById("categoryGrid");
-    if (categoryGrid) {
+    if (categoryGrid && window.RP) {
+      const all = RP.api.getRoadmaps();
       categoryGrid.innerHTML = categoriesInfo.map(cat => {
-        const roadmapsInCat = all.filter(r => r.category === cat.name).length;
+        const count = all.filter(r => r.category === cat.name).length;
         return `
-          <div class="glass-card" style="display: flex; flex-direction: column; align-items: flex-start; padding: 32px; border-radius: 16px; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; height: 100%; border: 1px solid var(--border-color);" onclick="window.location.href='pages/roadmaps.html?category=${encodeURIComponent(cat.name)}'" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
-            <div style="font-size: 32px; margin-bottom: 24px; background: rgba(0,0,0,0.03); width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 16px; flex-shrink: 0;">${cat.icon}</div>
-            <h3 style="font-size: 20px; margin-bottom: 12px; font-weight: 700; width: 100%;">${cat.name}</h3>
-            <p class="muted" style="margin-bottom: 24px; flex-grow: 1; line-height: 1.5; font-size: 15px; width: 100%;">${cat.desc}</p>
-            <div style="font-weight: 700; font-size: 13px; margin-bottom: 16px; color: ${cat.color};">${roadmapsInCat} Roadmap${roadmapsInCat !== 1 ? 's' : ''}</div>
-            <button style="background: ${cat.color}15; color: ${cat.color}; border: none; padding: 10px 20px; font-weight: 600; border-radius: 8px; font-size: 14px; cursor: pointer;">Explore &rarr;</button>
-          </div>
+          <a href="pages/roadmaps.html?category=${encodeURIComponent(cat.name)}" class="roadmap-card" style="text-decoration:none; padding:24px;">
+            <div style="font-size:28px; width:48px; height:48px; display:flex; align-items:center; justify-content:center; background:var(--color-bg-alt); border-radius:10px; margin-bottom:16px;">${cat.icon}</div>
+            <h3 style="font-size:16px; margin-bottom:6px;">${cat.name}</h3>
+            <p style="font-size:13px; color:var(--color-text-secondary); line-height:1.5; flex:1; margin-bottom:16px;">${cat.desc}</p>
+            <span style="font-size:12px; color:${cat.color}; font-weight:600;">${count} roadmap${count !== 1 ? 's' : ''}</span>
+          </a>
         `;
       }).join("");
     }
-    RP.initReveal();
 
-    document.getElementById("heroSearchForm").addEventListener("submit", (e) => {
-      e.preventDefault();
-      const q = document.getElementById("heroSearchInput").value.trim();
-      window.location.href = "pages/roadmaps.html" + (q ? "?q=" + encodeURIComponent(q) : "");
+    if (window.RP) RP.initReveal();
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.closest(".faq-item");
+        const isOpen = item.classList.contains("open");
+        document.querySelectorAll(".faq-item.open").forEach(i => {
+          i.classList.remove("open");
+          i.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+        });
+        if (!isOpen) {
+          item.classList.add("open");
+          btn.setAttribute("aria-expanded", "true");
+        }
+      });
     });
 
-    document.getElementById("contactForm").addEventListener("submit", (e) => {
+    // Hero search
+    document.getElementById("catSearchForm").addEventListener("submit", (e) => {
       e.preventDefault();
-      RP.showToast("Message sent — we'll get back to you soon!");
-      e.target.reset();
+      const q = document.getElementById("catSearchInput").value.trim();
+      window.location.href = "pages/roadmaps.html" + (q ? "?q=" + encodeURIComponent(q) : "");
     });
   });
 </script>
